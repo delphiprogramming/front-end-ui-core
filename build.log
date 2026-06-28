@@ -1,0 +1,1251 @@
+
+> bento-pdf@2.8.5 build
+> tsc && vite build && NODE_OPTIONS='--max-old-space-size=3072' node scripts/generate-i18n-pages.mjs && node scripts/generate-sitemap.mjs && node scripts/generate-security-headers.mjs && node scripts/seo-audit.mjs
+
+[Vite] Using local WASM files only
+2:40:22 AM [vite] warning: `esbuild` option was specified by "vite-plugin-node-polyfills" plugin. This option is deprecated, please use `oxc` instead.
+vite v8.0.10 building client environment for production...
+[2Ktransforming...[plugin rolldown:vite-resolve] Module "fs" has been externalized for browser compatibility, imported by "/tmp/bentopdf/node_modules/@neslinesli93/qpdf-wasm/dist/qpdf.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.
+[plugin rolldown:vite-resolve] Module "path" has been externalized for browser compatibility, imported by "/tmp/bentopdf/node_modules/@neslinesli93/qpdf-wasm/dist/qpdf.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.
+[plugin rolldown:vite-resolve] Module "crypto" has been externalized for browser compatibility, imported by "/tmp/bentopdf/node_modules/@neslinesli93/qpdf-wasm/dist/qpdf.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.
+[plugin rolldown:vite-resolve] Module "https" has been externalized for browser compatibility, imported by "/tmp/bentopdf/node_modules/follow-redirects/index.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.
+[plugin rolldown:vite-resolve] Module "http" has been externalized for browser compatibility, imported by "/tmp/bentopdf/node_modules/follow-redirects/index.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.
+[plugin rolldown:vite-resolve] Module "crypto" has been externalized for browser compatibility, imported by "/tmp/bentopdf/node_modules/embedpdf-snippet/dist/embedpdf-CBErZnKe.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.
+[33m[EVAL] Warning:[0m Use of direct `eval` function is strongly discouraged as it poses security risks and may cause issues with minification.
+ - Use of direct `eval` here. in node_modules/wasm-vips/lib/vips-es6.js at 17504..17508
+ [38;5;240m │[0m 
+ [38;5;240m │[0m [38;5;115mHelp[0m: Consider using indirect eval. For more information, check the documentation: https://rolldown.rs/guide/troubleshooting#avoiding-direct-eval
+
+[33m[EVAL] Warning:[0m Use of direct `eval` function is strongly discouraged as it poses security risks and may cause issues with minification.
+    [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m node_modules/wasm-vips/lib/vips-es6.js:39:223 [38;5;246m][0m
+    [38;5;246m│[0m
+ [38;5;246m39 │[0m [38;5;249mA[0m[38;5;249ma[0m[38;5;249m.[0m[38;5;249mp[0m[38;5;249mu[0m[38;5;249ms[0m[38;5;249mh[0m[38;5;249m([0m[38;5;249mf[0m[38;5;249mb[0m[38;5;249m)[0m[38;5;249m}[0m[38;5;249mA[0m[38;5;249ma[0m[38;5;249m=[0m[38;5;249mA[0m[38;5;249ma[0m[38;5;249m.[0m[38;5;249mj[0m[38;5;249mo[0m[38;5;249mi[0m[38;5;249mn[0m[38;5;249m([0m[38;5;249m"[0m[38;5;249m,[0m[38;5;249m"[0m[38;5;249m)[0m[38;5;249m;[0m[38;5;249mo[0m[38;5;249mg[0m[38;5;249m[[0m[38;5;249mI[0m[38;5;249m][0m[38;5;249m=[0m[38;5;249me[0m[38;5;249mv[0m[38;5;249ma[0m[38;5;249ml[0m[38;5;249m([0m[38;5;249m`[0m[38;5;249m([0m[38;5;249m$[0m[38;5;249m{[0m[38;5;249mA[0m[38;5;249ma[0m[38;5;249m}[0m[38;5;249m)[0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m>[0m[38;5;249m [0m[38;5;249m{[0m[38;5;249m [0m[38;5;249m$[0m[38;5;249m{[0m[38;5;249mc[0m[38;5;249ma[0m[38;5;249m}[0m[38;5;249m [0m[38;5;249m}[0m[38;5;249m;[0m[38;5;249m`[0m[38;5;249m)[0m[38;5;249m}[0m[38;5;249mf[0m[38;5;249mu[0m[38;5;249mn[0m[38;5;249mc[0m[38;5;249mt[0m[38;5;249mi[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249m [0m[38;5;249mR[0m[38;5;249m([0m[38;5;249mA[0m[38;5;249ma[0m[38;5;249m,[0m[38;5;249mc[0m[38;5;249ma[0m[38;5;249m,[0m[38;5;249mE[0m[38;5;249mb[0m[38;5;249m)[0m[38;5;249m{[0m[38;5;249mv[0m[38;5;249ma[0m[38;5;249mr[0m[38;5;249m [0m[38;5;249mf[0m[38;5;249mb[0m[38;5;249m=[0m[38;5;249m[[0m[38;5;249m][0m[38;5;249m;[0m[38;5;249mc[0m[38;5;249ma[0m[38;5;249m=[0m[38;5;249mc[0m[38;5;249ma[0m[38;5;249m.[0m[38;5;249ms[0m[38;5;249ml[0m[38;5;249mi[0m[38;5;249mc[0m[38;5;249me[0m[38;5;249m([0m[38;5;249m1[0m[38;5;249m,[0m[38;5;249m-[0m[38;5;249m1[0m[38;5;249m)[0m[38;5;249m;[0m[38;5;249mi[0m[38;5;249mf[0m[38;5;249m([0m[38;5;249m"[0m[38;5;249mv[0m[38;5;249mo[0m[38;5;249mi[0m[38;5;249md[0m[38;5;249m"[0m[38;5;249m![0m[38;5;249m=[0m[38;5;249mc[0m[38;5;249ma[0m[38;5;249m)[0m[38;5;249m{[0m[38;5;249mc[0m[38;5;249ma[0m[38;5;249m=[0m[38;5;249mc[0m[38;5;249ma[0m[38;5;249m.[0m[38;5;249ms[0m[38;5;249mp[0m[38;5;249ml[0m[38;5;249mi[0m[38;5;249mt[0m[38;5;249m([0m[38;5;249m"[0m[38;5;249m,[0m[38;5;249m"[0m[38;5;249m)[0m[38;5;249m;[0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249m([0m[38;5;249mv[0m[38;5;249ma[0m[38;5;249mr[0m[38;5;249m [0m[38;5;249mk[0m[38;5;249mi[0m[38;5;249m [0m[38;5;249mo[0m[38;5;249mf[0m[38;5;249m [0m[38;5;249mc[0m[38;5;249ma[0m[38;5;249m)[0m[38;5;249mc[0m[38;5;249ma[0m[38;5;249m=[0m[38;5;249mk[0m[38;5;249mi[0m[38;5;249m.[0m[38;5;249ms[0m[38;5;249mp[0m[38;5;249ml[0m[38;5;249mi[0m[38;5;249mt[0m[38;5;249m([0m[38;5;249m"[0m[38;5;249m [0m[38;5;249m"[0m[38;5;249m)[0m[38;5;249m.[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mp[0m[38;5;249m([0m[38;5;249m)[0m[38;5;249m,[0m[38;5;249mf[0m[38;5;249mb[0m[38;5;249m.[0m[38;5;249mp[0m[38;5;249mu[0m[38;5;249ms[0m[38;5;249mh[0m[38;5;249m([0m[38;5;249mc[0m[38;5;249ma[0m[38;5;249m.[0m[38;5;249mr[0m[38;5;249me[0m[38;5;249mp[0m[38;5;249ml[0m[38;5;249ma[0m[38;5;249mc[0m[38;5;249me[0m[38;5;249mA[0m[38;5;249ml[0m[38;5;249ml[0m[38;5;249m([0m[38;5;249m"[0m[38;5;249m*[0m[38;5;249m"[0m[38;5;249m,[0m[38;5;249m"[0m[38;5;249m"[0m[38;5;249m)[0m[38;5;249m)[0m[38;5;249m}[0m[38;5;249mq[0m[38;5;249m[[0m[38;5;249mA[0m[38;5;249ma[0m[38;5;249m][0m[38;5;249m=[0meval[38;5;249m([0m[38;5;249m`[0m[38;5;249m([0m[38;5;249m$[0m[38;5;249m{[0m[38;5;249mf[0m[38;5;249mb[0m[38;5;249m}[0m[38;5;249m)[0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m>[0m[38;5;249m [0m[38;5;249m$[0m[38;5;249m{[0m[38;5;249mE[0m[38;5;249mb[0m[38;5;249m}[0m[38;5;249m;[0m[38;5;249m`[0m[38;5;249m)[0m[38;5;249m}[0m[38;5;249m![0m[38;5;249mt[0m[38;5;249m&[0m[38;5;249m&[0m[38;5;249mc[0m[38;5;249m&[0m[38;5;249m&[0m[38;5;249m([0m[38;5;249mx[0m[38;5;249ma[0m[38;5;249m[[0m[38;5;249mc[0m[38;5;249m][0m[38;5;249m=[0m[38;5;249mG[0m[38;5;249m)[0m[38;5;249m;[0m[38;5;249ma[0m[38;5;249mg[0m[38;5;249m([0m[38;5;249mr[0m[38;5;249m,[0m[38;5;249mg[0m[38;5;249m.[0m[38;5;249mv[0m[38;5;249ma[0m[38;5;249m)[0m[38;5;249m;[0m[38;5;249mq[0m[38;5;249m=[0m[38;5;249mh[0m[38;5;249mg[0m[38;5;249m([0m[38;5;249mD[0m[38;5;249m.[0m[38;5;249me[0m[38;5;249mx[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249ms[0m[38;5;249m,[0m[38;5;249mp[0m[38;5;249m)[0m[38;5;249m;[0m[38;5;249md[0m[38;5;249mf[0m[38;5;249m([0m[38;5;249mq[0m[38;5;249m)[0m[38;5;249m;[0m[38;5;249mb[0m[38;5;249m.[0m[38;5;249mA[0m[38;5;249mb[0m[38;5;249m|[0m[38;5;249m|[0m[38;5;249mp[0m[38;5;249mg[0m[38;5;249m([0m[38;5;249m)[0m[38;5;249m;[0m[38;5;249mi[0m[38;5;249mf[0m[38;5;249m([0m[38;5;249m"[0m[38;5;249m_[0m[38;5;249m_[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m_[0m[38;5;249me[0m[38;5;249mm[0m[38;5;249m_[0m[38;5;249ma[0m[38;5;249ms[0m[38;5;249mm[0m[38;5;249m"[0m[38;5;249mi[0m[38;5;249mn[0m[38;5;249m [0m[38;5;249mq[0m[38;5;249m)[0m[38;5;249m{[0m[38;5;249mv[0m[38;5;249ma[0m[38;5;249mr[0m[38;5;249m [0m[38;5;249mI[0m[38;5;249m=[0m[38;5;249mq[0m[38;5;249m.[0m[38;5;249m_[0m[38;5;249m_[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m_[0m[38;5;249me[0m[38;5;249mm[0m[38;5;249m_[0m[38;5;249ma[0m[38;5;249ms[0m[38;5;249mm[0m[38;5;249m.[0m[38;5;249mv[0m[38;5;249ma[0m[38;5;249ml[0m[38;5;249mu[0m[38;5;249me[0m[38;5;249m;[0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249m([0m[38;5;249mG[0m[38;5;249m=[0m[38;5;249mq[0m[38;5;249m.[0m[38;5;249m_[0m[38;5;249m_[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249mo[0m[38;5;249mp[0m[38;5;249m_[0m[38;5;249me[0m[38;5;249mm[0m[38;5;249m_[0m[38;5;249ma[0m[38;5;249ms[0m[38;5;249mm[0m[38;5;249m.[0m[38;5;249mv[0m[38;5;249ma[0m[38;5;249ml[0m[38;5;249mu[0m[38;5;249me[0m[38;5;249m;[0m[38;5;249mI[0m[38;5;249m<[0m[38;5;249mG[0m[38;5;249m;[0m[38;5;249m)[0m[38;5;249m{[0m[38;5;249mv[0m[38;5;249ma[0m[38;5;249mr[0m[38;5;249m [0m[38;5;249mM[0m[38;5;249ma[0m[38;5;249m=[0m[38;5;249mS[0m[38;5;249m([0m[38;5;249mI[0m[38;5;249m)[0m[38;5;249m;[0m[38;5;249mH[0m[38;5;249m([0m[38;5;249mI[0m[38;5;249m,[0m[38;5;249mM[0m[38;5;249ma[0m[38;5;249m)[0m[38;5;249m;[0m[38;5;249mI[0m[38;5;249m=[0m[38;5;249my[0m[38;5;249m.[0m[38;5;249mi[0m[38;5;249mn[0m[38;5;249md[0m[38;5;249me[0m[38;5;249mx[0m[38;5;249mO[0m[38;5;249mf[0m[38;5;249m([0m[38;5;249m0[0m[38;5;249m,[0m[38;5;249mI[0m[38;5;249m)[0m[38;5;249m+[0m[38;5;249m1[0m[38;5;249m}[0m[38;5;249m}[0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249m([0m[38;5;249mv[0m[38;5;249ma[0m[38;5;249mr[0m[38;5;249m [0m[38;5;249mF[0m[38;5;249mb[0m[38;5;249m [0m[38;5;249mi[0m[38;5;249mn[0m[38;5;249m [0m[38;5;249mq[0m[38;5;249m)[0m[38;5;249mi[0m[38;5;249mf[0m[38;5;249m([0m[38;5;249mF[0m[38;5;249mb[0m[38;5;249m.[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249ms[0m[38;5;249mW[0m[38;5;249mi[0m[38;5;249mt[0m[38;5;249mh[0m[38;5;249m([0m[38;5;249m"[0m[38;5;249m_[0m[38;5;249m_[0m[38;5;249me[0m[38;5;249mm[0m[38;5;249m_[0m[38;5;249mj[0m[38;5;249ms[0m[38;5;249m_[0m[38;5;249m_[0m[38;5;249m"[0m[38;5;249m)[0m[38;5;249m)[0m[38;5;249m{[0m[38;5;249mI[0m[38;5;249m=[0m[38;5;249mq[0m[38;5;249m[[0m[38;5;249mF[0m[38;5;249mb[0m[38;5;249m][0m[38;5;249m.[0m[38;5;249mv[0m[38;5;249ma[0m[38;5;249ml[0m[38;5;249mu[0m[38;5;249me[0m[38;5;249m;[0m[38;5;249mM[0m[38;5;249ma[0m[38;5;249m=[0m
+ [38;5;240m   │[0m                                                                                                                                                                                                                               ──┬─  
+ [38;5;240m   │[0m                                                                                                                                                                                                                                 ╰─── Use of direct `eval` here.
+ [38;5;240m   │[0m 
+ [38;5;240m   │[0m [38;5;115mHelp[0m: Consider using indirect eval. For more information, check the documentation: https://rolldown.rs/guide/troubleshooting#avoiding-direct-eval
+[38;5;246m────╯[0m
+
+✓ 5073 modules transformed.
+rendering chunks...
+[vite-plugin-static-copy] Copied 1 items.
+computing gzip size...
+dist/assets/great-vibes-cyrillic-ext-400-normal-CKQhgFwn.woff2       4.54 kB
+dist/assets/dancing-script-vietnamese-400-normal-lz8MlVep.woff2      4.94 kB
+dist/assets/cursor-editorTextHighlight-kG3uUOwL.svg                  5.40 kB │ gzip:     2.20 kB
+dist/assets/lato-latin-ext-700-normal-C6gwlRgY.woff2                 5.55 kB
+dist/assets/lato-latin-ext-400-normal-CK4GAP86.woff2                 5.61 kB
+dist/assets/lato-latin-ext-400-italic-Dg-ZdBy0.woff2                 5.77 kB
+dist/assets/merriweather-vietnamese-700-normal-Bp6kWjW5.woff2        6.66 kB
+dist/assets/merriweather-vietnamese-400-normal-hNacsVs_.woff2        6.66 kB
+dist/assets/dancing-script-vietnamese-400-normal-D2srOv8f.woff       6.72 kB
+dist/assets/merriweather-vietnamese-400-italic-CpoqsQFt.woff2        7.30 kB
+dist/assets/dm-sans-latin-ext-400-normal-BtiwyxMk.woff2              7.36 kB
+dist/assets/dm-sans-latin-ext-600-normal-4vooXBpG.woff2              7.42 kB
+dist/assets/dm-sans-latin-ext-500-normal-BJfUCQsA.woff2              7.43 kB
+dist/assets/dm-sans-latin-ext-700-normal-CJIcxD6K.woff2              7.45 kB
+dist/assets/kalam-latin-ext-700-normal-BA-KJHgr.woff                 8.14 kB
+dist/assets/kalam-latin-ext-300-normal-BLhNrzl2.woff                 8.15 kB
+dist/assets/merriweather-vietnamese-400-normal-Dh8WVvgZ.woff         8.43 kB
+dist/assets/merriweather-vietnamese-700-normal-C7_HxHBa.woff         8.46 kB
+dist/assets/kalam-latin-ext-400-normal-AcQmRO9z.woff                 8.72 kB
+dist/assets/merriweather-vietnamese-400-italic-O1h-65_z.woff         9.24 kB
+dist/assets/great-vibes-vietnamese-400-normal-Cxbm9Uac.woff          9.56 kB
+dist/assets/dm-sans-latin-ext-400-normal-BjWJ59Pq.woff               9.97 kB
+dist/assets/dm-sans-latin-ext-700-normal-BLI3TTWz.woff              10.01 kB
+dist/assets/dm-sans-latin-ext-600-normal-DRtaDpgU.woff              10.02 kB
+dist/assets/dm-sans-latin-ext-500-normal-DR84L5F-.woff              10.06 kB
+dist/assets/kalam-latin-ext-300-normal-D2qQV1hD.woff2               11.62 kB
+dist/assets/great-vibes-vietnamese-400-normal-a2O3jU53.woff2        11.64 kB
+dist/assets/kalam-latin-ext-400-normal-DtcdGa4L.woff2               12.14 kB
+dist/assets/kalam-latin-ext-700-normal-CwgfRD_T.woff2               12.15 kB
+dist/assets/dancing-script-latin-ext-400-normal-C917Kz-3.woff2      13.56 kB
+dist/assets/dm-sans-latin-600-normal-Aqo67rzb.woff2                 14.14 kB
+dist/contact.html                                                   14.14 kB │ gzip:     3.60 kB
+dist/assets/dm-sans-latin-400-normal-CW0RaeGs.woff2                 14.20 kB
+dist/assets/dm-sans-latin-500-normal-B9HHJjqV.woff2                 14.30 kB
+dist/assets/dm-sans-latin-700-normal-DvUfVpUG.woff2                 14.34 kB
+dist/tools.html                                                     15.70 kB │ gzip:     3.98 kB
+dist/assets/compare.worker-DAlL8dh7.js                              15.87 kB
+dist/404.html                                                       16.21 kB │ gzip:     4.06 kB
+dist/assets/kalam-latin-700-normal-7TSuSrjP.woff                    16.58 kB
+dist/assets/kalam-latin-300-normal-BvFOWM3i.woff                    16.76 kB
+dist/assets/lato-latin-400-normal-B11PyLys.woff                     17.45 kB
+dist/assets/lato-latin-700-normal-DAdL7O4w.woff                     17.62 kB
+dist/assets/kalam-latin-400-normal-Bl-H2BUA.woff                    17.66 kB
+dist/assets/dancing-script-latin-ext-400-normal-DaWfpMsu.woff       18.18 kB
+dist/assets/dm-sans-latin-600-normal-BmdmIIQ2.woff                  18.32 kB
+dist/assets/dm-sans-latin-400-normal-BwCSEQnW.woff                  18.35 kB
+dist/assets/dm-sans-latin-700-normal-CUSSCpQX.woff                  18.50 kB
+dist/assets/dm-sans-latin-500-normal-Dr3UlScf.woff                  18.52 kB
+dist/assets/merriweather-cyrillic-ext-700-normal-Bk1p9YoV.woff2     18.56 kB
+dist/assets/lato-latin-400-italic-DL5fBv-7.woff                     18.58 kB
+dist/assets/merriweather-cyrillic-ext-400-normal-D9NYhYTq.woff2     18.60 kB
+dist/privacy.html                                                   18.66 kB │ gzip:     5.40 kB
+dist/src/pages/pdf-multi-tool.html                                  20.89 kB │ gzip:     4.14 kB
+dist/terms.html                                                     20.97 kB │ gzip:     5.91 kB
+dist/assets/merriweather-cyrillic-ext-400-italic-BzaozJoX.woff2     21.21 kB
+dist/about.html                                                     21.36 kB │ gzip:     5.28 kB
+dist/assets/kalam-latin-300-normal-BZrHEY_3.woff2                   21.47 kB
+dist/assets/kalam-latin-700-normal-D2H-9ISU.woff2                   22.14 kB
+dist/assets/kalam-latin-400-normal-BthBl_aR.woff2                   22.33 kB
+dist/assets/merriweather-cyrillic-ext-700-normal-DoooT6Vg.woff      22.79 kB
+dist/assets/merriweather-cyrillic-ext-400-normal-Di6yW_eE.woff      22.81 kB
+dist/src/pages/markdown-to-pdf.html                                 22.84 kB │ gzip:     5.00 kB
+dist/assets/lato-latin-700-normal-BUGMgin4.woff2                    23.04 kB
+dist/assets/cedarville-cursive-latin-400-normal-iwxzJfoE.woff2      23.14 kB
+dist/pdf-security.html                                              23.26 kB │ gzip:     5.20 kB
+dist/assets/lato-latin-400-normal-BEhtfm5r.woff2                    23.58 kB
+dist/assets/dancing-script-latin-400-normal--YrtvvVF.woff2          23.81 kB
+dist/pdf-merge-split.html                                           23.93 kB │ gzip:     5.32 kB
+dist/assets/lato-latin-400-italic-Dc0B1559.woff2                    24.40 kB
+dist/src/pages/pdf-workflow.html                                    24.43 kB │ gzip:     5.39 kB
+dist/src/pages/pdf-to-json.html                                     24.57 kB │ gzip:     5.46 kB
+dist/src/pages/json-to-pdf.html                                     24.72 kB │ gzip:     5.53 kB
+dist/faq.html                                                       24.89 kB │ gzip:     5.44 kB
+dist/src/pages/pdf-to-csv.html                                      25.17 kB │ gzip:     5.61 kB
+dist/src/pages/wasm-settings.html                                   25.25 kB │ gzip:     5.34 kB
+dist/src/pages/pdf-to-excel.html                                    25.39 kB │ gzip:     5.65 kB
+dist/src/pages/pdf-to-bmp.html                                      25.40 kB │ gzip:     5.66 kB
+dist/src/pages/edit-pdf.html                                        25.47 kB │ gzip:     5.69 kB
+dist/assets/merriweather-cyrillic-400-normal-AvfsDsMQ.woff2         25.48 kB
+dist/assets/merriweather-cyrillic-700-normal-wbY04GlL.woff2         25.49 kB
+dist/src/pages/bmp-to-pdf.html                                      25.56 kB │ gzip:     5.66 kB
+dist/src/pages/validate-signature-pdf.html                          25.64 kB │ gzip:     5.83 kB
+dist/src/pages/pdf-to-greyscale.html                                25.64 kB │ gzip:     5.66 kB
+dist/src/pages/csv-to-pdf.html                                      25.70 kB │ gzip:     5.72 kB
+dist/src/pages/add-stamps.html                                      25.71 kB │ gzip:     5.75 kB
+dist/src/pages/heic-to-pdf.html                                     25.71 kB │ gzip:     5.70 kB
+dist/src/pages/edit-attachments.html                                25.72 kB │ gzip:     5.69 kB
+dist/src/pages/psd-to-pdf.html                                      25.81 kB │ gzip:     5.73 kB
+dist/src/pages/odt-to-pdf.html                                      25.82 kB │ gzip:     5.74 kB
+dist/src/pages/view-metadata.html                                   25.82 kB │ gzip:     5.75 kB
+dist/src/pages/pdf-to-zip.html                                      25.82 kB │ gzip:     5.77 kB
+dist/src/pages/invert-colors.html                                   25.83 kB │ gzip:     5.72 kB
+dist/src/pages/fb2-to-pdf.html                                      25.86 kB │ gzip:     5.76 kB
+dist/src/pages/mobi-to-pdf.html                                     25.86 kB │ gzip:     5.74 kB
+dist/src/pages/text-color.html                                      25.87 kB │ gzip:     5.74 kB
+dist/src/pages/rtf-to-pdf.html                                      25.89 kB │ gzip:     5.77 kB
+dist/src/pages/epub-to-pdf.html                                     25.91 kB │ gzip:     5.73 kB
+dist/assets/merriweather-cyrillic-ext-400-italic-jx_hxLZ6.woff      25.93 kB
+dist/src/pages/xps-to-pdf.html                                      25.95 kB │ gzip:     5.77 kB
+dist/src/pages/remove-annotations.html                              26.00 kB │ gzip:     5.71 kB
+dist/assets/cedarville-cursive-latin-400-normal-B_pP7-Bd.woff       26.00 kB
+dist/src/pages/xml-to-pdf.html                                      26.03 kB │ gzip:     5.78 kB
+dist/src/pages/background-color.html                                26.08 kB │ gzip:     5.73 kB
+dist/src/pages/cbz-to-pdf.html                                      26.08 kB │ gzip:     5.82 kB
+dist/src/pages/extract-attachments.html                             26.11 kB │ gzip:     5.76 kB
+dist/src/pages/pdf-to-svg.html                                      26.12 kB │ gzip:     5.81 kB
+dist/src/pages/odg-to-pdf.html                                      26.16 kB │ gzip:     5.82 kB
+dist/src/pages/excel-to-pdf.html                                    26.17 kB │ gzip:     5.81 kB
+dist/src/pages/pdf-to-docx.html                                     26.18 kB │ gzip:     5.82 kB
+dist/src/pages/ods-to-pdf.html                                      26.18 kB │ gzip:     5.82 kB
+dist/src/pages/odp-to-pdf.html                                      26.19 kB │ gzip:     5.82 kB
+dist/src/pages/wps-to-pdf.html                                      26.21 kB │ gzip:     5.85 kB
+dist/src/pages/wpd-to-pdf.html                                      26.23 kB │ gzip:     5.85 kB
+dist/src/pages/pub-to-pdf.html                                      26.25 kB │ gzip:     5.85 kB
+dist/src/pages/delete-pages.html                                    26.25 kB │ gzip:     5.83 kB
+dist/src/pages/vsd-to-pdf.html                                      26.26 kB │ gzip:     5.86 kB
+dist/src/pages/pages-to-pdf.html                                    26.30 kB │ gzip:     5.85 kB
+dist/src/pages/remove-metadata.html                                 26.34 kB │ gzip:     5.87 kB
+dist/src/pages/pdf-to-png.html                                      26.35 kB │ gzip:     5.87 kB
+dist/src/pages/extract-pages.html                                   26.35 kB │ gzip:     5.91 kB
+dist/src/pages/repair-pdf.html                                      26.38 kB │ gzip:     5.82 kB
+dist/src/pages/pdf-to-webp.html                                     26.38 kB │ gzip:     5.86 kB
+dist/src/pages/powerpoint-to-pdf.html                               26.43 kB │ gzip:     5.80 kB
+dist/src/pages/sign-pdf.html                                        26.50 kB │ gzip:     5.96 kB
+dist/src/pages/reverse-pages.html                                   26.50 kB │ gzip:     5.93 kB
+dist/src/pages/remove-restrictions.html                             26.51 kB │ gzip:     5.88 kB
+dist/src/pages/pdf-to-markdown.html                                 26.60 kB │ gzip:     5.89 kB
+dist/src/pages/tiff-to-pdf.html                                     26.60 kB │ gzip:     5.92 kB
+dist/src/pages/png-to-pdf.html                                      26.72 kB │ gzip:     5.97 kB
+dist/src/pages/svg-to-pdf.html                                      26.72 kB │ gzip:     5.98 kB
+dist/src/pages/extract-images.html                                  26.73 kB │ gzip:     5.88 kB
+dist/src/pages/form-filler.html                                     26.74 kB │ gzip:     6.09 kB
+dist/src/pages/webp-to-pdf.html                                     26.74 kB │ gzip:     5.97 kB
+dist/src/pages/linearize-pdf.html                                   26.77 kB │ gzip:     5.98 kB
+dist/pdf-editor.html                                                26.78 kB │ gzip:     5.67 kB
+dist/src/pages/encrypt-pdf.html                                     26.82 kB │ gzip:     5.95 kB
+dist/src/pages/jpg-to-pdf.html                                      26.93 kB │ gzip:     6.05 kB
+dist/src/pages/decrypt-pdf.html                                     26.95 kB │ gzip:     5.99 kB
+dist/src/pages/extract-tables.html                                  26.96 kB │ gzip:     5.83 kB
+dist/src/pages/organize-pdf.html                                    27.04 kB │ gzip:     6.01 kB
+dist/src/pages/pdf-to-jpg.html                                      27.04 kB │ gzip:     5.99 kB
+dist/src/pages/rotate-pdf.html                                      27.04 kB │ gzip:     6.00 kB
+dist/src/pages/page-dimensions.html                                 27.12 kB │ gzip:     6.00 kB
+dist/src/pages/word-to-pdf.html                                     27.17 kB │ gzip:     6.05 kB
+dist/src/pages/alternate-merge.html                                 27.18 kB │ gzip:     6.08 kB
+dist/src/pages/prepare-pdf-for-ai.html                              27.23 kB │ gzip:     6.08 kB
+dist/src/pages/pdf-to-text.html                                     27.24 kB │ gzip:     6.07 kB
+dist/src/pages/rotate-custom.html                                   27.26 kB │ gzip:     5.99 kB
+dist/src/pages/remove-blank-pages.html                              27.28 kB │ gzip:     6.01 kB
+dist/src/pages/image-to-pdf.html                                    27.31 kB │ gzip:     6.13 kB
+dist/src/pages/flatten-pdf.html                                     27.48 kB │ gzip:     6.14 kB
+dist/assets/merriweather-cyrillic-400-italic-_pNjnltw.woff2         27.59 kB
+dist/src/pages/timestamp-pdf.html                                   27.71 kB │ gzip:     6.15 kB
+dist/src/pages/divide-pages.html                                    27.72 kB │ gzip:     6.20 kB
+dist/src/pages/crop-pdf.html                                        27.81 kB │ gzip:     6.13 kB
+dist/src/pages/add-blank-page.html                                  27.85 kB │ gzip:     6.11 kB
+dist/src/pages/rasterize-pdf.html                                   27.89 kB │ gzip:     6.13 kB
+dist/src/pages/deskew-pdf.html                                      27.94 kB │ gzip:     6.17 kB
+dist/src/pages/font-to-outline.html                                 27.97 kB │ gzip:     6.19 kB
+dist/src/pages/overlay-pdf.html                                     28.04 kB │ gzip:     5.91 kB
+dist/src/pages/page-numbers.html                                    28.09 kB │ gzip:     6.04 kB
+dist/src/pages/table-of-contents.html                               28.12 kB │ gzip:     5.98 kB
+dist/src/pages/pdf-to-pdfa.html                                     28.29 kB │ gzip:     6.32 kB
+dist/src/pages/add-attachments.html                                 28.40 kB │ gzip:     6.19 kB
+dist/src/pages/pdf-to-tiff.html                                     28.89 kB │ gzip:     6.34 kB
+dist/src/pages/email-to-pdf.html                                    29.00 kB │ gzip:     6.41 kB
+dist/src/pages/combine-single-page.html                             29.05 kB │ gzip:     6.23 kB
+dist/src/pages/add-page-labels.html                                 29.08 kB │ gzip:     6.30 kB
+dist/assets/dancing-script-latin-400-normal-BY5FxJb0.woff           29.13 kB
+dist/src/pages/n-up-pdf.html                                        29.45 kB │ gzip:     6.39 kB
+dist/src/pages/pdf-layers.html                                      29.61 kB │ gzip:     6.57 kB
+dist/src/pages/header-footer.html                                   30.20 kB │ gzip:     6.16 kB
+dist/src/pages/change-permissions.html                              30.24 kB │ gzip:     6.15 kB
+dist/src/pages/edit-metadata.html                                   30.45 kB │ gzip:     6.23 kB
+dist/src/pages/merge-pdf.html                                       30.65 kB │ gzip:     6.85 kB
+dist/src/pages/sanitize-pdf.html                                    30.65 kB │ gzip:     6.16 kB
+dist/src/pages/fix-page-size.html                                   31.13 kB │ gzip:     6.60 kB
+dist/src/pages/bates-numbering.html                                 31.13 kB │ gzip:     6.46 kB
+dist/src/pages/adjust-colors.html                                   31.73 kB │ gzip:     6.26 kB
+dist/src/pages/txt-to-pdf.html                                      32.51 kB │ gzip:     7.06 kB
+dist/pdf-converter.html                                             33.30 kB │ gzip:     6.15 kB
+dist/assets/merriweather-cyrillic-700-normal-CHCcU-4a.woff          33.55 kB
+dist/assets/merriweather-cyrillic-400-normal-DAcQ8g-H.woff          33.62 kB
+dist/src/pages/posterize-pdf.html                                   33.62 kB │ gzip:     6.83 kB
+dist/src/pages/scanner-effect.html                                  33.88 kB │ gzip:     6.49 kB
+dist/src/pages/pdf-to-cbz.html                                      34.09 kB │ gzip:     6.70 kB
+dist/src/pages/compress-pdf.html                                    34.31 kB │ gzip:     7.33 kB
+dist/assets/great-vibes-latin-400-normal-BAZ173uY.woff              34.85 kB
+dist/assets/great-vibes-cyrillic-400-normal-DtFXCWjq.woff           35.52 kB
+dist/src/pages/split-pdf.html                                       35.53 kB │ gzip:     7.24 kB
+dist/assets/merriweather-cyrillic-400-italic-B7k1f10R.woff          35.74 kB
+dist/src/pages/pdf-booklet.html                                     35.81 kB │ gzip:     7.08 kB
+dist/src/pages/ocr-pdf.html                                         38.32 kB │ gzip:     8.06 kB
+dist/src/pages/form-creator.html                                    40.91 kB │ gzip:     7.78 kB
+dist/src/pages/add-watermark.html                                   42.35 kB │ gzip:     7.89 kB
+dist/assets/great-vibes-latin-400-normal-q5-78SH_.woff2             42.80 kB
+dist/assets/merriweather-latin-ext-700-normal-jHnxg2Kc.woff2        42.88 kB
+dist/assets/merriweather-latin-ext-400-normal-CWVzVQq3.woff2        42.95 kB
+dist/assets/merriweather-latin-ext-400-italic-menzxlp4.woff2        44.92 kB
+dist/assets/great-vibes-cyrillic-400-normal-C-wcqNJs.woff2          45.24 kB
+dist/src/pages/digital-sign-pdf.html                                45.80 kB │ gzip:     8.38 kB
+dist/src/pages/bookmark.html                                        45.93 kB │ gzip:     8.50 kB
+dist/assets/merriweather-latin-700-normal-DoUP8Ce-.woff2            48.66 kB
+dist/assets/merriweather-latin-400-normal-G4kZaoXi.woff2            49.16 kB
+dist/assets/merriweather-latin-400-italic-CuD3zK4B.woff2            51.83 kB
+dist/src/pages/compare-pdfs.html                                    52.32 kB │ gzip:     9.50 kB
+dist/assets/merriweather-latin-ext-400-normal-CLqijLtt.woff         55.94 kB
+dist/assets/merriweather-latin-ext-700-normal-CaBzXGOk.woff         56.10 kB
+dist/assets/great-vibes-latin-ext-400-normal-wh4xxCIu.woff          56.11 kB
+dist/licensing.html                                                 57.25 kB │ gzip:     9.29 kB
+dist/assets/merriweather-latin-ext-400-italic-Cdckp9Zh.woff         58.53 kB
+dist/assets/great-vibes-latin-ext-400-normal-CsjMq8GN.woff2         66.48 kB
+dist/assets/merriweather-latin-700-normal-D4-nzrAh.woff             66.66 kB
+dist/assets/merriweather-latin-400-normal-CvqO63Ah.woff             66.99 kB
+dist/assets/kalam-devanagari-300-normal-O1aj49dn.woff               68.50 kB
+dist/assets/kalam-devanagari-700-normal-B52CSkpd.woff               70.49 kB
+dist/assets/merriweather-latin-400-italic-Cq-nJhum.woff             71.09 kB
+dist/index.html                                                     73.79 kB │ gzip:    16.37 kB
+dist/assets/kalam-devanagari-400-normal-Dyzod-UE.woff               74.56 kB
+dist/assets/vips-es6-B9LnAsFW.js                                    89.88 kB
+dist/assets/kalam-devanagari-300-normal-D4mac2K0.woff2             105.91 kB
+dist/assets/kalam-devanagari-700-normal-BeU_-hjz.woff2             108.50 kB
+dist/assets/kalam-devanagari-400-normal-Dy6c0U2e.woff2             109.32 kB
+dist/assets/Phosphor-DtdjzkpE.woff2                                147.38 kB
+dist/assets/Phosphor-CDxgqcPu.ttf                                  488.63 kB
+dist/assets/Phosphor-BdqudwT5.woff                                 488.71 kB
+dist/assets/pdf.worker.min-B_fnEKel.js                           1,239.04 kB
+dist/assets/pdf.worker-CliDBb4N.js                               2,174.48 kB
+dist/assets/Phosphor-BXRFlF4V.svg                                2,996.37 kB │ gzip:   832.83 kB
+dist/assets/pdfium-6UaCOAE8.wasm                                 4,519.88 kB │ gzip: 2,119.91 kB
+dist/assets/vips-C9VSaDuC.wasm                                   5,894.48 kB │ gzip: 2,175.47 kB
+dist/assets/bookmark-B63fEQ4G.css                                    1.55 kB │ gzip:     0.65 kB
+dist/assets/crop-pdf-DyCSdD8l.css                                    3.68 kB │ gzip:     1.23 kB
+dist/assets/markdown-to-pdf-679_3_Z8.css                            12.55 kB │ gzip:     2.81 kB
+dist/assets/style-DGDqwKgd.css                                     198.62 kB │ gzip:    49.56 kB
+dist/assets/form-creator-SsKkXe4u.css                              274.19 kB │ gzip:    45.54 kB
+dist/assets/embedpdf-BMsQEB5I.js                                     0.07 kB │ gzip:     0.08 kB
+dist/assets/__vite-browser-external-CSfEiUSk.js                      0.08 kB │ gzip:     0.09 kB
+dist/assets/array-DCLF4a3s.js                                        0.10 kB │ gzip:     0.11 kB
+dist/assets/lucide-init-DOzsW0b2.js                                  0.10 kB │ gzip:     0.12 kB
+dist/assets/channel-Bisx3sVZ.js                                      0.11 kB │ gzip:     0.12 kB
+dist/assets/shortcuts-init-DZ8UVw8r.js                               0.11 kB │ gzip:     0.12 kB
+dist/assets/pie-LRSECV5Y-nnS9R4BC.js                                 0.11 kB │ gzip:     0.11 kB
+dist/assets/info-J43DQDTF-CJsTikIM.js                                0.11 kB │ gzip:     0.11 kB
+dist/assets/radar-GUYGQ44K-kxj3oa-n.js                               0.11 kB │ gzip:     0.12 kB
+dist/assets/packet-YPE3B663-CWatC67E.js                              0.12 kB │ gzip:     0.12 kB
+dist/assets/treemap-LRROVOQU-tdM4v53l.js                             0.12 kB │ gzip:     0.12 kB
+dist/assets/wardley-L42UT6IY-BOdIsoen.js                             0.12 kB │ gzip:     0.12 kB
+dist/assets/gitGraph-WXDBUCRP-CqF-YruU.js                            0.12 kB │ gzip:     0.12 kB
+dist/assets/treeView-BLDUP644-DyO29ZHX.js                            0.12 kB │ gzip:     0.12 kB
+dist/assets/architecture-7EHR7CIX-DZEsFM_e.js                        0.12 kB │ gzip:     0.12 kB
+dist/assets/eventmodeling-FCH6USID-D2-qgs4I.js                       0.12 kB │ gzip:     0.12 kB
+dist/assets/init-mUGirQ32.js                                         0.14 kB │ gzip:     0.12 kB
+dist/assets/chunk-QZHKN3VN-B6tOP-64.js                               0.19 kB │ gzip:     0.16 kB
+dist/assets/chunk-4BX2VUAB-CZgoAy_G.js                               0.22 kB │ gzip:     0.17 kB
+dist/assets/chunk-55IACEB6-CBkKwNQk.js                               0.23 kB │ gzip:     0.20 kB
+dist/assets/deduplicate-filename-C49pUs0D.js                         0.25 kB │ gzip:     0.18 kB
+dist/assets/timestamp-tsa-eCWJHDYq.js                                0.26 kB │ gzip:     0.16 kB
+dist/assets/typeof-B5Wn0pIc.js                                       0.27 kB │ gzip:     0.16 kB
+dist/assets/wasm-cdn-config-obMV8uft.js                              0.28 kB │ gzip:     0.22 kB
+dist/assets/stateDiagram-v2-BHNVJYJU-sm7JdgJA.js                     0.35 kB │ gzip:     0.27 kB
+dist/assets/chunk-FMBD7UC4-DvgT_Xv9.js                               0.36 kB │ gzip:     0.26 kB
+dist/assets/classDiagram-4FO5ZUOK-BdtM7qEn.js                        0.42 kB │ gzip:     0.30 kB
+dist/assets/classDiagram-v2-Q7XG4LA2-BNNE5KdB.js                     0.42 kB │ gzip:     0.30 kB
+dist/assets/pdf-converter-DjtQ7D2b.js                                0.45 kB │ gzip:     0.26 kB
+dist/assets/pdf-editor-CUIF3gX0.js                                   0.45 kB │ gzip:     0.26 kB
+dist/assets/pdf-merge-split-C5PCc2yN.js                              0.45 kB │ gzip:     0.26 kB
+dist/assets/pdf-security-B-R2fPu0.js                                 0.45 kB │ gzip:     0.26 kB
+dist/assets/chunk-FHYWG6QK-B44Hpk37.js                               0.45 kB │ gzip:     0.31 kB
+dist/assets/chunk-5DO6E6H7-yJGLEi--.js                               0.45 kB │ gzip:     0.31 kB
+dist/assets/chunk-MPE355IW-CBIa4nkX.js                               0.45 kB │ gzip:     0.31 kB
+dist/assets/chunk-UIBZB4QT-KWLmNeDf.js                               0.46 kB │ gzip:     0.31 kB
+dist/assets/simple-mode-footer-Dhdi_OUN.js                           0.48 kB │ gzip:     0.30 kB
+dist/assets/chunk-PUPMXCY4-BOC0tneV.js                               0.50 kB │ gzip:     0.34 kB
+dist/assets/chunk-2J33WTMH-BVtvCYjR.js                               0.50 kB │ gzip:     0.36 kB
+dist/assets/infoDiagram-5YYISTIA-DBdboZ28.js                         0.54 kB │ gzip:     0.36 kB
+dist/assets/chunk-MZUSXYTE-BID9khqT.js                               0.60 kB │ gzip:     0.39 kB
+dist/assets/chunk-WCWK7LTN-Csmba5Vs.js                               0.65 kB │ gzip:     0.40 kB
+dist/assets/alternate-merge-Djaz2Hwa.js                              0.77 kB │ gzip:     0.47 kB
+dist/assets/defineProperty-DnXa4uc1.js                               0.81 kB │ gzip:     0.48 kB
+dist/assets/cpdf-helper-BJNNMYfH.js                                  0.83 kB │ gzip:     0.51 kB
+dist/assets/mobileMenu-BU92ZdYD.js                                   0.89 kB │ gzip:     0.33 kB
+dist/assets/chunk-4EGX6M5U-DvzVvsxv.js                               0.90 kB │ gzip:     0.48 kB
+dist/assets/load-pdf-document-BYnDEu73.js                            1.00 kB │ gzip:     0.47 kB
+dist/assets/slicedToArray-Dv7FK6kz.js                                1.05 kB │ gzip:     0.62 kB
+dist/assets/pymupdf-loader-ffRqYscu.js                               1.09 kB │ gzip:     0.57 kB
+dist/assets/ghostscript-dynamic-loader-D391jo1d.js                   1.15 kB │ gzip:     0.63 kB
+dist/assets/ordinal-BaZOBHJi.js                                      1.17 kB │ gzip:     0.56 kB
+dist/assets/preload-helper-CqFqBgT5.js                               1.19 kB │ gzip:     0.68 kB
+dist/assets/chunk-2-T-6w9V.js                                        1.21 kB │ gzip:     0.67 kB
+dist/assets/chunk-BR22UD5L-L-ZuKF_i.js                               1.46 kB │ gzip:     0.78 kB
+dist/assets/image-input-utils-BC2MAaAb.js                            1.58 kB │ gzip:     0.79 kB
+dist/assets/repair-pdf-DsHh-fb5.js                                   1.65 kB │ gzip:     0.68 kB
+dist/assets/chunk-N66VUXT2-DHZEHgZ8.js                               1.67 kB │ gzip:     0.73 kB
+dist/assets/dist-DIwQPBgp.js                                         1.85 kB │ gzip:     0.83 kB
+dist/assets/main-CCnG2E6g.js                                         1.87 kB │ gzip:     0.91 kB
+dist/assets/chunk-ND2GUHAM-CduYQywJ.js                               1.87 kB │ gzip:     0.83 kB
+dist/assets/flatten-annotations-CQ1MzW78.js                          1.91 kB │ gzip:     0.90 kB
+dist/assets/image-compress-BPq_Prkj.js                               1.91 kB │ gzip:     0.73 kB
+dist/assets/repair-pdf-4_RQyO6h.js                                   1.93 kB │ gzip:     1.00 kB
+dist/assets/pdf-decrypt-BInDjkZ-.js                                  2.09 kB │ gzip:     0.91 kB
+dist/assets/path-Drcw3oRx.js                                         2.31 kB │ gzip:     0.99 kB
+dist/assets/diagram-5GNKFQAL-C7n_ZzL1.js                             2.69 kB │ gzip:     1.29 kB
+dist/assets/pdf-to-csv-BWb5t64c.js                                   3.06 kB │ gzip:     1.47 kB
+dist/assets/pdf-to-zip-cPdUcTr2.js                                   3.09 kB │ gzip:     1.34 kB
+dist/assets/psd-to-pdf-eRylmHeB.js                                   3.19 kB │ gzip:     1.41 kB
+dist/assets/heic-to-pdf-PAAwnXA1.js                                  3.23 kB │ gzip:     1.48 kB
+dist/assets/pdf-to-excel-tTSEXrSu.js                                 3.26 kB │ gzip:     1.55 kB
+dist/assets/jpg-to-pdf-CqTPO2qR.js                                   3.30 kB │ gzip:     1.50 kB
+dist/assets/image-to-pdf-t8QniFQN.js                                 3.31 kB │ gzip:     1.47 kB
+dist/assets/page-numbers-B-uoP-dL.js                                 3.32 kB │ gzip:     1.45 kB
+dist/assets/json-to-pdf-BOowvDbh.js                                  3.40 kB │ gzip:     1.45 kB
+dist/assets/background-color-Dvk56qEw.js                             3.40 kB │ gzip:     1.50 kB
+dist/assets/pdf-to-json-zMsgmPoL.js                                  3.48 kB │ gzip:     1.49 kB
+dist/assets/arc-CRlG_1HM.js                                          3.49 kB │ gzip:     1.47 kB
+dist/assets/timestamp-pdf-DfdTyBJM.js                                3.51 kB │ gzip:     1.56 kB
+dist/assets/table-of-contents-LkwFaKON.js                            3.51 kB │ gzip:     1.49 kB
+dist/assets/bmp-to-pdf-D7uycm20.js                                   3.57 kB │ gzip:     1.59 kB
+dist/assets/pdf-to-bmp-Dtb63ubB.js                                   3.60 kB │ gzip:     1.60 kB
+dist/assets/pdf-to-greyscale-CwSAoS-Z.js                             3.62 kB │ gzip:     1.68 kB
+dist/assets/reverse-pages-1wo6EIYG.js                                3.68 kB │ gzip:     1.60 kB
+dist/assets/extract-pages-CKUn1yTF.js                                3.72 kB │ gzip:     1.61 kB
+dist/assets/invert-colors-CRMVxWy_.js                                3.84 kB │ gzip:     1.75 kB
+dist/assets/extract-tables-929HrpHP.js                               3.85 kB │ gzip:     1.80 kB
+dist/assets/fix-page-size-CxsVQXZg.js                                3.87 kB │ gzip:     1.55 kB
+dist/assets/png-to-pdf-CweSJuMv.js                                   3.88 kB │ gzip:     1.76 kB
+dist/assets/odg-to-pdf-sZtuzN6a.js                                   3.88 kB │ gzip:     1.69 kB
+dist/assets/odp-to-pdf-BbwmmKBG.js                                   3.88 kB │ gzip:     1.69 kB
+dist/assets/ods-to-pdf-Dxw88vq4.js                                   3.88 kB │ gzip:     1.69 kB
+dist/assets/webp-to-pdf-ccpLLj6D.js                                  3.88 kB │ gzip:     1.76 kB
+dist/assets/odt-to-pdf-DoMm_pyH.js                                   3.90 kB │ gzip:     1.70 kB
+dist/assets/fb2-to-pdf-BryKnWDz.js                                   3.92 kB │ gzip:     1.71 kB
+dist/assets/mobi-to-pdf-D_aNfc0J.js                                  3.93 kB │ gzip:     1.71 kB
+dist/assets/wpd-to-pdf-o2ToTnFn.js                                   3.93 kB │ gzip:     1.71 kB
+dist/assets/wps-to-pdf-BXG49zoQ.js                                   3.93 kB │ gzip:     1.71 kB
+dist/assets/pages-to-pdf-DwhtMhRE.js                                 3.94 kB │ gzip:     1.72 kB
+dist/assets/image-effects-CgNkB_1m.js                                3.94 kB │ gzip:     1.54 kB
+dist/assets/pub-to-pdf-YbIHS23c.js                                   3.95 kB │ gzip:     1.73 kB
+dist/assets/vsd-to-pdf-C3dBa6ZZ.js                                   3.95 kB │ gzip:     1.73 kB
+dist/assets/excel-to-pdf-BMMkeND0.js                                 3.96 kB │ gzip:     1.70 kB
+dist/assets/remove-annotations-BAbztsjN.js                           3.97 kB │ gzip:     1.62 kB
+dist/assets/epub-to-pdf-UMTTeNqO.js                                  3.98 kB │ gzip:     1.73 kB
+dist/assets/pdf-to-png-Ct4GFXC4.js                                   3.98 kB │ gzip:     1.70 kB
+dist/assets/text-color-DZUJgLOi.js                                   3.98 kB │ gzip:     1.81 kB
+dist/assets/sanitize-pdf-BChiH1gt.js                                 3.99 kB │ gzip:     1.51 kB
+dist/assets/rtf-to-pdf-B8JoXlgN.js                                   4.00 kB │ gzip:     1.74 kB
+dist/assets/pdf-to-jpg-Ckdj34Br.js                                   4.00 kB │ gzip:     1.72 kB
+dist/assets/xps-to-pdf-BnPPS51L.js                                   4.01 kB │ gzip:     1.75 kB
+dist/assets/remove-metadata-Dz0R6aGG.js                              4.02 kB │ gzip:     1.56 kB
+dist/assets/pdf-to-webp-BDC_Dbrx.js                                  4.02 kB │ gzip:     1.72 kB
+dist/assets/powerpoint-to-pdf-B58CEY7k.js                            4.03 kB │ gzip:     1.74 kB
+dist/assets/pdf-to-svg-BieEcPb_.js                                   4.05 kB │ gzip:     1.74 kB
+dist/assets/svg-to-pdf-DNfwLORl.js                                   4.07 kB │ gzip:     1.84 kB
+dist/assets/pdf-to-text-NHgJVnm3.js                                  4.10 kB │ gzip:     1.83 kB
+dist/assets/diagram-LMA3HP47-3n-tJ2O1.js                             4.14 kB │ gzip:     1.78 kB
+dist/assets/font-to-outline-B32Zj8CQ.js                              4.19 kB │ gzip:     1.64 kB
+dist/assets/pdf-to-docx-Cb2a6SFn.js                                  4.20 kB │ gzip:     1.84 kB
+dist/assets/remove-restrictions-BRtjKeVI.js                          4.24 kB │ gzip:     1.72 kB
+dist/assets/divide-pages-BlJIesL1.js                                 4.32 kB │ gzip:     1.80 kB
+dist/assets/pdf-to-markdown-DAfDVo8Z.js                              4.33 kB │ gzip:     1.88 kB
+dist/assets/add-blank-page-Du0RNawF.js                               4.34 kB │ gzip:     1.75 kB
+dist/assets/overlay-pdf-BTtp8W3t.js                                  4.35 kB │ gzip:     1.73 kB
+dist/assets/wasm-settings-BCxROHOK.js                                4.35 kB │ gzip:     1.51 kB
+dist/assets/encrypt-pdf-BBqO7jC6.js                                  4.43 kB │ gzip:     1.80 kB
+dist/assets/linearize-pdf-Fe-S_Pls.js                                4.44 kB │ gzip:     1.81 kB
+dist/assets/prepare-pdf-for-ai-CuLtKi2i.js                           4.49 kB │ gzip:     1.99 kB
+dist/assets/n-up-pdf-C_nDet4A.js                                     4.57 kB │ gzip:     1.98 kB
+dist/assets/txt-to-pdf-ChEtBErW.js                                   4.60 kB │ gzip:     1.80 kB
+dist/assets/flatten-pdf-Btd-72n7.js                                  4.63 kB │ gzip:     1.73 kB
+dist/assets/defaultLocale-BmaASgvO.js                                4.64 kB │ gzip:     2.12 kB
+dist/assets/rasterize-pdf-CSlNWRmC.js                                4.65 kB │ gzip:     2.02 kB
+dist/assets/pdf-to-pdfa-Dggak7XC.js                                  4.70 kB │ gzip:     2.06 kB
+dist/assets/email-to-pdf-BVOSaIyP.js                                 4.74 kB │ gzip:     1.99 kB
+dist/assets/header-footer-BhcpnTbJ.js                                4.74 kB │ gzip:     1.86 kB
+dist/assets/decrypt-pdf-Ct3uoYaR.js                                  4.77 kB │ gzip:     1.90 kB
+dist/assets/mermaid-parser.core-BuvB8HOU.js                          4.81 kB │ gzip:     1.47 kB
+dist/assets/alternate-merge-CBAYedtU.js                              4.81 kB │ gzip:     2.00 kB
+dist/assets/deskew-pdf-CSsMs8TG.js                                   4.91 kB │ gzip:     1.90 kB
+dist/assets/word-to-pdf-BxEfPPEe.js                                  4.98 kB │ gzip:     1.98 kB
+dist/assets/csv-to-pdf-BLV6bIe2.js                                   4.99 kB │ gzip:     2.04 kB
+dist/assets/pieDiagram-4H26LBE5-hDbGIThR.js                          5.10 kB │ gzip:     2.22 kB
+dist/assets/edit-pdf-BWgENRhQ.js                                     5.11 kB │ gzip:     2.11 kB
+dist/assets/combine-single-page-Dc2Uat90.js                          5.24 kB │ gzip:     2.19 kB
+dist/assets/extract-images-BN6WXMcW.js                               5.26 kB │ gzip:     2.19 kB
+dist/assets/add-stamps-BFa9Spny.js                                   5.27 kB │ gzip:     2.18 kB
+dist/assets/extract-attachments-DEdOfkkB.js                          5.33 kB │ gzip:     2.00 kB
+dist/assets/linear-BCAyCDwN.js                                       5.54 kB │ gzip:     2.27 kB
+dist/assets/form-filler-BN3pUbhQ.js                                  5.60 kB │ gzip:     2.01 kB
+dist/assets/cbz-to-pdf--2Z7rpjr.js                                   5.65 kB │ gzip:     2.50 kB
+dist/assets/change-permissions-BMv3i_TD.js                           5.66 kB │ gzip:     2.12 kB
+dist/assets/diagram-2AECGRRQ-CwU2iN_h.js                             5.67 kB │ gzip:     2.34 kB
+dist/assets/pdf-operations-CMw8ZvjY.js                               5.73 kB │ gzip:     2.19 kB
+dist/assets/delete-pages-DJ6WYpYZ.js                                 5.77 kB │ gzip:     2.20 kB
+dist/assets/adjust-colors-i8bZqv4p.js                                5.99 kB │ gzip:     2.25 kB
+dist/assets/sign-pdf-Cmgr5BIW.js                                     6.08 kB │ gzip:     2.32 kB
+dist/assets/rotate-pdf-BXunO0Ll.js                                   6.19 kB │ gzip:     2.19 kB
+dist/assets/scanner-effect-CXIfoMrH.js                               6.56 kB │ gzip:     2.42 kB
+dist/assets/pdf-to-tiff-By9hPczj.js                                  6.75 kB │ gzip:     2.65 kB
+dist/assets/page-dimensions-C53Lts_l.js                              6.77 kB │ gzip:     2.51 kB
+dist/assets/add-attachments-sGKbL0R6.js                              6.78 kB │ gzip:     2.33 kB
+dist/assets/sanitize-BeC4nbeV.js                                     6.92 kB │ gzip:     1.80 kB
+dist/assets/view-metadata-DIOf2xVU.js                                7.04 kB │ gzip:     2.61 kB
+dist/assets/rotate-custom-HR3rp9AK.js                                7.27 kB │ gzip:     2.65 kB
+dist/assets/edit-metadata-4yOD3Lpa.js                                7.27 kB │ gzip:     2.44 kB
+dist/assets/pdf-layers-D-IpTi4f.js                                   7.32 kB │ gzip:     2.71 kB
+dist/assets/edit-attachments-S6nxwrxu.js                             7.33 kB │ gzip:     2.34 kB
+dist/assets/posterize-pdf-BB0c4j7S.js                                7.36 kB │ gzip:     2.68 kB
+dist/assets/ghostscript-loader-Dby_ILjD.js                           7.42 kB │ gzip:     2.51 kB
+dist/assets/wasm-provider-DTbrVjza.js                                7.60 kB │ gzip:     3.13 kB
+dist/assets/organize-pdf-B9kASDFQ.js                                 7.76 kB │ gzip:     2.94 kB
+dist/assets/remove-blank-pages-BjGOD_3X.js                           8.04 kB │ gzip:     2.86 kB
+dist/assets/pdf-booklet-BKp0_Uim.js                                  8.10 kB │ gzip:     3.31 kB
+dist/assets/ocr-pdf-DPQUSW4v.js                                      8.11 kB │ gzip:     2.73 kB
+dist/assets/bates-numbering-BxJDX55n.js                              8.74 kB │ gzip:     2.99 kB
+dist/assets/compress-pdf-DB6Rx05L.js                                 9.18 kB │ gzip:     3.50 kB
+dist/assets/browser-CbJDT_so.js                                      9.39 kB │ gzip:     4.69 kB
+dist/assets/tools-B1vM5q28.js                                        9.51 kB │ gzip:     2.28 kB
+dist/assets/add-page-labels-TIkR5us5.js                              9.89 kB │ gzip:     3.32 kB
+dist/assets/stateDiagram-AJRCARHV-D-VY3HMO.js                       10.17 kB │ gzip:     3.50 kB
+dist/assets/browser-ponyfill-DEeiRCNO.js                            10.47 kB │ gzip:     3.57 kB
+dist/assets/diagram-KO2AKTUF-mfqAulK5.js                            10.56 kB │ gzip:     4.06 kB
+dist/assets/pdf-to-cbz-BOa_TNYx.js                                  10.62 kB │ gzip:     3.71 kB
+dist/assets/digital-sign-pdf-BEseGADd.js                            10.86 kB │ gzip:     3.33 kB
+dist/assets/dagre-BM42HDAG-CPtkEEv7.js                              10.94 kB │ gzip:     4.02 kB
+dist/assets/merge-pdf-k5m-Jr2K.js                                   11.40 kB │ gzip:     3.81 kB
+dist/assets/split-pdf-BbuxkKY0.js                                   12.01 kB │ gzip:     4.38 kB
+dist/assets/password-prompt-BOlBdI3v.js                             14.80 kB │ gzip:     4.15 kB
+dist/assets/diagram-OG6HWLK6-DiRTHE9f.js                            15.37 kB │ gzip:     5.36 kB
+dist/assets/libreoffice-loader-CAFhd4Gg.js                          15.44 kB │ gzip:     4.10 kB
+dist/assets/browser-BISJ9naB-DXOp2qfg-OYGAt27i.js                   16.53 kB │ gzip:     4.00 kB
+dist/assets/add-watermark-CrUGQe-M.js                               17.06 kB │ gzip:     5.06 kB
+dist/assets/ishikawaDiagram-YF4QCWOH-B6s-VUyp.js                    17.20 kB │ gzip:     6.47 kB
+dist/assets/kanban-definition-UN3LZRKU-DCUGXq1e.js                  19.93 kB │ gzip:     6.99 kB
+dist/assets/csv-to-pdf-BgHPRjJq.js                                  20.09 kB │ gzip:     7.48 kB
+dist/assets/purify.es-DxpHX2wT.js                                   21.11 kB │ gzip:     8.50 kB
+dist/assets/tesseract-runtime-CMu-Gq7B.js                           22.20 kB │ gzip:     9.43 kB
+dist/assets/sankeyDiagram-5OEKKPKP-h2r1JIqk.js                      22.76 kB │ gzip:     8.24 kB
+dist/assets/journeyDiagram-JHISSGLW-CmuJkl2u.js                     23.14 kB │ gzip:     8.16 kB
+dist/assets/validate-signature-pdf-scGFJvKI.js                      23.17 kB │ gzip:     6.76 kB
+dist/assets/mindmap-definition-RKZ34NQL-C0oqxy3u.js                 23.33 kB │ gzip:     7.87 kB
+dist/assets/pdf-multi-tool-CyUgPaNl.js                              23.52 kB │ gzip:     6.76 kB
+dist/assets/graphlib-CzL7KeBY.js                                    23.90 kB │ gzip:     8.31 kB
+dist/assets/wardleyDiagram-YWT4CUSO-B3d3ZSdr.js                     25.08 kB │ gzip:     6.49 kB
+dist/assets/erDiagram-TEJ5UH35-Cuyyh2gB.js                          26.49 kB │ gzip:     9.17 kB
+dist/assets/dist-CVg9w1Rz.js                                        26.89 kB │ gzip:     8.27 kB
+dist/assets/rough.esm-CVegHnt3.js                                   27.10 kB │ gzip:     8.85 kB
+dist/assets/tiff-to-pdf-C0iUpAuz.js                                 28.74 kB │ gzip:     9.87 kB
+dist/assets/gitGraphDiagram-PVQCEYII-CZUKMJ-7.js                    28.92 kB │ gzip:     8.52 kB
+dist/assets/timeline-definition-PNZ67QCA-Oi9pGqrl.js                30.28 kB │ gzip:     9.91 kB
+dist/assets/requirementDiagram-4Y6WPE33-DA9ODzK4.js                 30.63 kB │ gzip:     9.59 kB
+dist/assets/quadrantDiagram-W4KKPZXB-DM-RIK1B.js                    33.50 kB │ gzip:     9.73 kB
+dist/assets/bookmark-BVHVekon.js                                    35.44 kB │ gzip:    10.01 kB
+dist/assets/chunk-AQP2D5EJ-UHscZZVF.js                              36.61 kB │ gzip:    11.83 kB
+dist/assets/dagre-B6fwiVEq.js                                       36.86 kB │ gzip:    13.23 kB
+dist/assets/xychartDiagram-2RQKCTM6-BFWeWell.js                     39.87 kB │ gzip:    11.14 kB
+dist/assets/vennDiagram-CIIHVFJN-Bp0Tz0QA.js                        40.53 kB │ gzip:    14.85 kB
+dist/assets/crop-pdf-gl3hARpG.js                                    44.55 kB │ gzip:    14.61 kB
+dist/assets/chunk-727SXJPM-DdCixkWX.js                              48.51 kB │ gzip:    15.70 kB
+dist/assets/compare-pdfs-CPEBij2m.js                                59.21 kB │ gzip:    19.35 kB
+dist/assets/xml-to-pdf-BNXwKyOJ.js                                  59.37 kB │ gzip:    21.25 kB
+dist/assets/flowDiagram-I6XJVG4X-BBFuSM5w.js                        59.89 kB │ gzip:    19.37 kB
+dist/assets/c4Diagram-AAUBKEIU-BhbY7TN0.js                          69.07 kB │ gzip:    19.31 kB
+dist/assets/ganttDiagram-6RSMTGT7-C_zg2P-L.js                       69.19 kB │ gzip:    22.67 kB
+dist/assets/blockDiagram-GPEHLZMM-DQJsMZPu.js                       72.47 kB │ gzip:    20.46 kB
+dist/assets/cose-bilkent-S5V4N54A-aaTK9EZT.js                       81.41 kB │ gzip:    21.57 kB
+dist/assets/vips-es6-CkU9ZRC2.js                                    89.92 kB │ gzip:    32.29 kB
+dist/assets/jszip.min-D1ghq3YS.js                                   95.89 kB │ gzip:    28.49 kB
+dist/assets/markdown-it-CTw5J66J.js                                101.25 kB │ gzip:    45.59 kB
+dist/assets/stream-browserify-BexaePeA.js                          104.79 kB │ gzip:    30.78 kB
+dist/assets/sequenceDiagram-3UESZ5HK-Cai61rBW.js                   115.62 kB │ gzip:    30.52 kB
+dist/assets/architectureDiagram-3BPJPVTR-CSQOPh-i.js               146.79 kB │ gzip:    40.22 kB
+dist/assets/index.es-Dhibcv_T.js                                   150.66 kB │ gzip:    48.58 kB
+dist/assets/html2canvas-DiKkvTIX.js                                199.56 kB │ gzip:    46.78 kB
+dist/assets/katex-DOOlLvUD.js                                      256.33 kB │ gzip:    76.84 kB
+dist/assets/direct-engine-DG0BQM6z-lAdjQxnq.js                     273.14 kB │ gzip:    63.19 kB
+dist/assets/lib-Bd4eG6u4.js                                        281.49 kB │ gzip:    74.47 kB
+dist/assets/style-DmEuuwuW.js                                      368.66 kB │ gzip:    84.78 kB
+dist/assets/email-to-pdf-DhQvH2-B.js                               396.52 kB │ gzip:   191.59 kB
+dist/assets/pdf-workflow-AlgIukkQ.js                               402.89 kB │ gzip:    83.82 kB
+dist/assets/jspdf.plugin.autotable-BM9q6WEI.js                     421.74 kB │ gzip:   135.25 kB
+dist/assets/cytoscape.esm-DZZWY1bk.js                              434.09 kB │ gzip:   137.50 kB
+dist/assets/es-BBPpdjB2.js                                         435.63 kB │ gzip:   181.36 kB
+dist/assets/xlsx-BPQXm02g.js                                       493.22 kB │ gzip:   160.75 kB
+dist/assets/chunk-NNHCCRGN-BOILScE-.js                             593.68 kB │ gzip:   137.75 kB
+dist/assets/main-C6XNF7_o.js                                       601.12 kB │ gzip:   183.80 kB
+dist/assets/worker-engine--SVIHUN1-B598AzX4.js                     634.46 kB │ gzip:   110.87 kB
+dist/assets/markdown-to-pdf-TWjE2h3c.js                            711.98 kB │ gzip:   181.78 kB
+dist/assets/ocr-oze9bpZG.js                                        726.39 kB │ gzip:   334.58 kB
+dist/assets/digital-sign-pdf-CvREGXxA.js                           846.18 kB │ gzip:   373.13 kB
+dist/assets/embedpdf-CBErZnKe-Z3mPPNjw.js                          892.79 kB │ gzip:   217.06 kB
+dist/assets/form-creator-BK6U35PX.js                               911.60 kB │ gzip:   253.09 kB
+dist/assets/heic2any-C_S9rIcr.js                                 1,352.13 kB │ gzip:   344.71 kB
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+[33m[EVAL] Warning:[0m Use of direct `eval` function is strongly discouraged as it poses security risks and may cause issues with minification.
+ - Use of direct `eval` here. in node_modules/wasm-vips/lib/vips-es6.js at 17569..17573
+ [38;5;240m │[0m 
+ [38;5;240m │[0m [38;5;115mHelp[0m: Consider using indirect eval. For more information, check the documentation: https://rolldown.rs/guide/troubleshooting#avoiding-direct-eval
+
+[33m[EVAL] Warning:[0m Use of direct `eval` function is strongly discouraged as it poses security risks and may cause issues with minification.
+    [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m node_modules/wasm-vips/lib/vips-es6.js:39:223 [38;5;246m][0m
+    [38;5;246m│[0m
+ [38;5;246m39 │[0m [38;5;249mA[0m[38;5;249ma[0m[38;5;249m.[0m[38;5;249mp[0m[38;5;249mu[0m[38;5;249ms[0m[38;5;249mh[0m[38;5;249m([0m[38;5;249mf[0m[38;5;249mb[0m[38;5;249m)[0m[38;5;249m}[0m[38;5;249mA[0m[38;5;249ma[0m[38;5;249m=[0m[38;5;249mA[0m[38;5;249ma[0m[38;5;249m.[0m[38;5;249mj[0m[38;5;249mo[0m[38;5;249mi[0m[38;5;249mn[0m[38;5;249m([0m[38;5;249m"[0m[38;5;249m,[0m[38;5;249m"[0m[38;5;249m)[0m[38;5;249m;[0m[38;5;249mo[0m[38;5;249mg[0m[38;5;249m[[0m[38;5;249mI[0m[38;5;249m][0m[38;5;249m=[0m[38;5;249me[0m[38;5;249mv[0m[38;5;249ma[0m[38;5;249ml[0m[38;5;249m([0m[38;5;249m`[0m[38;5;249m([0m[38;5;249m$[0m[38;5;249m{[0m[38;5;249mA[0m[38;5;249ma[0m[38;5;249m}[0m[38;5;249m)[0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m>[0m[38;5;249m [0m[38;5;249m{[0m[38;5;249m [0m[38;5;249m$[0m[38;5;249m{[0m[38;5;249mc[0m[38;5;249ma[0m[38;5;249m}[0m[38;5;249m [0m[38;5;249m}[0m[38;5;249m;[0m[38;5;249m`[0m[38;5;249m)[0m[38;5;249m}[0m[38;5;249mf[0m[38;5;249mu[0m[38;5;249mn[0m[38;5;249mc[0m[38;5;249mt[0m[38;5;249mi[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249m [0m[38;5;249mR[0m[38;5;249m([0m[38;5;249mA[0m[38;5;249ma[0m[38;5;249m,[0m[38;5;249mc[0m[38;5;249ma[0m[38;5;249m,[0m[38;5;249mE[0m[38;5;249mb[0m[38;5;249m)[0m[38;5;249m{[0m[38;5;249mv[0m[38;5;249ma[0m[38;5;249mr[0m[38;5;249m [0m[38;5;249mf[0m[38;5;249mb[0m[38;5;249m=[0m[38;5;249m[[0m[38;5;249m][0m[38;5;249m;[0m[38;5;249mc[0m[38;5;249ma[0m[38;5;249m=[0m[38;5;249mc[0m[38;5;249ma[0m[38;5;249m.[0m[38;5;249ms[0m[38;5;249ml[0m[38;5;249mi[0m[38;5;249mc[0m[38;5;249me[0m[38;5;249m([0m[38;5;249m1[0m[38;5;249m,[0m[38;5;249m-[0m[38;5;249m1[0m[38;5;249m)[0m[38;5;249m;[0m[38;5;249mi[0m[38;5;249mf[0m[38;5;249m([0m[38;5;249m"[0m[38;5;249mv[0m[38;5;249mo[0m[38;5;249mi[0m[38;5;249md[0m[38;5;249m"[0m[38;5;249m![0m[38;5;249m=[0m[38;5;249mc[0m[38;5;249ma[0m[38;5;249m)[0m[38;5;249m{[0m[38;5;249mc[0m[38;5;249ma[0m[38;5;249m=[0m[38;5;249mc[0m[38;5;249ma[0m[38;5;249m.[0m[38;5;249ms[0m[38;5;249mp[0m[38;5;249ml[0m[38;5;249mi[0m[38;5;249mt[0m[38;5;249m([0m[38;5;249m"[0m[38;5;249m,[0m[38;5;249m"[0m[38;5;249m)[0m[38;5;249m;[0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249m([0m[38;5;249mv[0m[38;5;249ma[0m[38;5;249mr[0m[38;5;249m [0m[38;5;249mk[0m[38;5;249mi[0m[38;5;249m [0m[38;5;249mo[0m[38;5;249mf[0m[38;5;249m [0m[38;5;249mc[0m[38;5;249ma[0m[38;5;249m)[0m[38;5;249mc[0m[38;5;249ma[0m[38;5;249m=[0m[38;5;249mk[0m[38;5;249mi[0m[38;5;249m.[0m[38;5;249ms[0m[38;5;249mp[0m[38;5;249ml[0m[38;5;249mi[0m[38;5;249mt[0m[38;5;249m([0m[38;5;249m"[0m[38;5;249m [0m[38;5;249m"[0m[38;5;249m)[0m[38;5;249m.[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mp[0m[38;5;249m([0m[38;5;249m)[0m[38;5;249m,[0m[38;5;249mf[0m[38;5;249mb[0m[38;5;249m.[0m[38;5;249mp[0m[38;5;249mu[0m[38;5;249ms[0m[38;5;249mh[0m[38;5;249m([0m[38;5;249mc[0m[38;5;249ma[0m[38;5;249m.[0m[38;5;249mr[0m[38;5;249me[0m[38;5;249mp[0m[38;5;249ml[0m[38;5;249ma[0m[38;5;249mc[0m[38;5;249me[0m[38;5;249mA[0m[38;5;249ml[0m[38;5;249ml[0m[38;5;249m([0m[38;5;249m"[0m[38;5;249m*[0m[38;5;249m"[0m[38;5;249m,[0m[38;5;249m"[0m[38;5;249m"[0m[38;5;249m)[0m[38;5;249m)[0m[38;5;249m}[0m[38;5;249mq[0m[38;5;249m[[0m[38;5;249mA[0m[38;5;249ma[0m[38;5;249m][0m[38;5;249m=[0meval[38;5;249m([0m[38;5;249m`[0m[38;5;249m([0m[38;5;249m$[0m[38;5;249m{[0m[38;5;249mf[0m[38;5;249mb[0m[38;5;249m}[0m[38;5;249m)[0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m>[0m[38;5;249m [0m[38;5;249m$[0m[38;5;249m{[0m[38;5;249mE[0m[38;5;249mb[0m[38;5;249m}[0m[38;5;249m;[0m[38;5;249m`[0m[38;5;249m)[0m[38;5;249m}[0m[38;5;249m![0m[38;5;249mt[0m[38;5;249m&[0m[38;5;249m&[0m[38;5;249mc[0m[38;5;249m&[0m[38;5;249m&[0m[38;5;249m([0m[38;5;249mx[0m[38;5;249ma[0m[38;5;249m[[0m[38;5;249mc[0m[38;5;249m][0m[38;5;249m=[0m[38;5;249mG[0m[38;5;249m)[0m[38;5;249m;[0m[38;5;249ma[0m[38;5;249mg[0m[38;5;249m([0m[38;5;249mr[0m[38;5;249m,[0m[38;5;249mg[0m[38;5;249m.[0m[38;5;249mv[0m[38;5;249ma[0m[38;5;249m)[0m[38;5;249m;[0m[38;5;249mq[0m[38;5;249m=[0m[38;5;249mh[0m[38;5;249mg[0m[38;5;249m([0m[38;5;249mD[0m[38;5;249m.[0m[38;5;249me[0m[38;5;249mx[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249ms[0m[38;5;249m,[0m[38;5;249mp[0m[38;5;249m)[0m[38;5;249m;[0m[38;5;249md[0m[38;5;249mf[0m[38;5;249m([0m[38;5;249mq[0m[38;5;249m)[0m[38;5;249m;[0m[38;5;249mb[0m[38;5;249m.[0m[38;5;249mA[0m[38;5;249mb[0m[38;5;249m|[0m[38;5;249m|[0m[38;5;249mp[0m[38;5;249mg[0m[38;5;249m([0m[38;5;249m)[0m[38;5;249m;[0m[38;5;249mi[0m[38;5;249mf[0m[38;5;249m([0m[38;5;249m"[0m[38;5;249m_[0m[38;5;249m_[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m_[0m[38;5;249me[0m[38;5;249mm[0m[38;5;249m_[0m[38;5;249ma[0m[38;5;249ms[0m[38;5;249mm[0m[38;5;249m"[0m[38;5;249mi[0m[38;5;249mn[0m[38;5;249m [0m[38;5;249mq[0m[38;5;249m)[0m[38;5;249m{[0m[38;5;249mv[0m[38;5;249ma[0m[38;5;249mr[0m[38;5;249m [0m[38;5;249mI[0m[38;5;249m=[0m[38;5;249mq[0m[38;5;249m.[0m[38;5;249m_[0m[38;5;249m_[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m_[0m[38;5;249me[0m[38;5;249mm[0m[38;5;249m_[0m[38;5;249ma[0m[38;5;249ms[0m[38;5;249mm[0m[38;5;249m.[0m[38;5;249mv[0m[38;5;249ma[0m[38;5;249ml[0m[38;5;249mu[0m[38;5;249me[0m[38;5;249m;[0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249m([0m[38;5;249mG[0m[38;5;249m=[0m[38;5;249mq[0m[38;5;249m.[0m[38;5;249m_[0m[38;5;249m_[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249mo[0m[38;5;249mp[0m[38;5;249m_[0m[38;5;249me[0m[38;5;249mm[0m[38;5;249m_[0m[38;5;249ma[0m[38;5;249ms[0m[38;5;249mm[0m[38;5;249m.[0m[38;5;249mv[0m[38;5;249ma[0m[38;5;249ml[0m[38;5;249mu[0m[38;5;249me[0m[38;5;249m;[0m[38;5;249mI[0m[38;5;249m<[0m[38;5;249mG[0m[38;5;249m;[0m[38;5;249m)[0m[38;5;249m{[0m[38;5;249mv[0m[38;5;249ma[0m[38;5;249mr[0m[38;5;249m [0m[38;5;249mM[0m[38;5;249ma[0m[38;5;249m=[0m[38;5;249mS[0m[38;5;249m([0m[38;5;249mI[0m[38;5;249m)[0m[38;5;249m;[0m[38;5;249mH[0m[38;5;249m([0m[38;5;249mI[0m[38;5;249m,[0m[38;5;249mM[0m[38;5;249ma[0m[38;5;249m)[0m[38;5;249m;[0m[38;5;249mI[0m[38;5;249m=[0m[38;5;249my[0m[38;5;249m.[0m[38;5;249mi[0m[38;5;249mn[0m[38;5;249md[0m[38;5;249me[0m[38;5;249mx[0m[38;5;249mO[0m[38;5;249mf[0m[38;5;249m([0m[38;5;249m0[0m[38;5;249m,[0m[38;5;249mI[0m[38;5;249m)[0m[38;5;249m+[0m[38;5;249m1[0m[38;5;249m}[0m[38;5;249m}[0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249m([0m[38;5;249mv[0m[38;5;249ma[0m[38;5;249mr[0m[38;5;249m [0m[38;5;249mF[0m[38;5;249mb[0m[38;5;249m [0m[38;5;249mi[0m[38;5;249mn[0m[38;5;249m [0m[38;5;249mq[0m[38;5;249m)[0m[38;5;249mi[0m[38;5;249mf[0m[38;5;249m([0m[38;5;249mF[0m[38;5;249mb[0m[38;5;249m.[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249ms[0m[38;5;249mW[0m[38;5;249mi[0m[38;5;249mt[0m[38;5;249mh[0m[38;5;249m([0m[38;5;249m"[0m[38;5;249m_[0m[38;5;249m_[0m[38;5;249me[0m[38;5;249mm[0m[38;5;249m_[0m[38;5;249mj[0m[38;5;249ms[0m[38;5;249m_[0m[38;5;249m_[0m[38;5;249m"[0m[38;5;249m)[0m[38;5;249m)[0m[38;5;249m{[0m[38;5;249mI[0m[38;5;249m=[0m[38;5;249mq[0m[38;5;249m[[0m[38;5;249mF[0m[38;5;249mb[0m[38;5;249m][0m[38;5;249m.[0m[38;5;249mv[0m[38;5;249ma[0m[38;5;249ml[0m[38;5;249mu[0m[38;5;249me[0m[38;5;249m;[0m[38;5;249mM[0m[38;5;249ma[0m[38;5;249m=[0m
+ [38;5;240m   │[0m                                                                                                                                                                                                                               ──┬─  
+ [38;5;240m   │[0m                                                                                                                                                                                                                                 ╰─── Use of direct `eval` here.
+ [38;5;240m   │[0m 
+ [38;5;240m   │[0m [38;5;115mHelp[0m: Consider using indirect eval. For more information, check the documentation: https://rolldown.rs/guide/troubleshooting#avoiding-direct-eval
+[38;5;246m────╯[0m
+
+✓ built in 18.66s
+
+✨ [vite-plugin-compression]:algorithm=brotliCompress - compressed file successfully: 
+dist//tmp/bentopdf/404.html.br                                                                               15.83kb / brotliCompress: 3.25kb
+dist//tmp/bentopdf/about.html.br                                                                             20.86kb / brotliCompress: 4.19kb
+dist//tmp/bentopdf/add-attachments.html.br                                                                   27.74kb / brotliCompress: 5.03kb
+dist//tmp/bentopdf/add-page-labels.html.br                                                                   28.40kb / brotliCompress: 5.10kb
+dist//tmp/bentopdf/add-blank-page.html.br                                                                    27.20kb / brotliCompress: 4.97kb
+dist//tmp/bentopdf/add-watermark.html.br                                                                     41.37kb / brotliCompress: 6.44kb
+dist//tmp/bentopdf/adjust-colors.html.br                                                                     30.99kb / brotliCompress: 5.11kb
+dist//tmp/bentopdf/assets/add-attachments-sGKbL0R6.js.br                                                     6.63kb / brotliCompress: 1.95kb
+dist//tmp/bentopdf/alternate-merge.html.br                                                                   26.55kb / brotliCompress: 4.97kb
+dist//tmp/bentopdf/add-stamps.html.br                                                                        25.11kb / brotliCompress: 4.70kb
+dist//tmp/bentopdf/assets/add-blank-page-Du0RNawF.js.br                                                      4.25kb / brotliCompress: 1.45kb
+dist//tmp/bentopdf/assets/add-stamps-BFa9Spny.js.br                                                          5.15kb / brotliCompress: 1.81kb
+dist//tmp/bentopdf/assets/adjust-colors-i8bZqv4p.js.br                                                       5.85kb / brotliCompress: 1.92kb
+dist//tmp/bentopdf/assets/alternate-merge-CBAYedtU.js.br                                                     4.70kb / brotliCompress: 1.67kb
+dist//tmp/bentopdf/assets/arc-CRlG_1HM.js.br                                                                 3.41kb / brotliCompress: 1.28kb
+dist//tmp/bentopdf/assets/background-color-Dvk56qEw.js.br                                                    3.33kb / brotliCompress: 1.24kb
+dist//tmp/bentopdf/assets/add-watermark-CrUGQe-M.js.br                                                       16.67kb / brotliCompress: 4.34kb
+dist//tmp/bentopdf/assets/bookmark-B63fEQ4G.css.br                                                           1.52kb / brotliCompress: 0.50kb
+dist//tmp/bentopdf/assets/bmp-to-pdf-D7uycm20.js.br                                                          3.49kb / brotliCompress: 1.32kb
+dist//tmp/bentopdf/assets/add-page-labels-TIkR5us5.js.br                                                     9.66kb / brotliCompress: 2.81kb
+dist//tmp/bentopdf/assets/browser-BISJ9naB-DXOp2qfg-OYGAt27i.js.br                                           16.14kb / brotliCompress: 3.47kb
+dist//tmp/bentopdf/assets/bates-numbering-BxJDX55n.js.br                                                     8.54kb / brotliCompress: 2.55kb
+dist//tmp/bentopdf/assets/cbz-to-pdf--2Z7rpjr.js.br                                                          5.53kb / brotliCompress: 2.13kb
+dist//tmp/bentopdf/assets/bookmark-BVHVekon.js.br                                                            34.61kb / brotliCompress: 8.69kb
+dist//tmp/bentopdf/assets/chunk-2-T-6w9V.js.br                                                               1.19kb / brotliCompress: 0.58kb
+dist//tmp/bentopdf/assets/change-permissions-BMv3i_TD.js.br                                                  5.53kb / brotliCompress: 1.73kb
+dist//tmp/bentopdf/assets/browser-ponyfill-DEeiRCNO.js.br                                                    10.23kb / brotliCompress: 3.08kb
+dist//tmp/bentopdf/assets/browser-CbJDT_so.js.br                                                             9.17kb / brotliCompress: 4.17kb
+dist//tmp/bentopdf/assets/chunk-BR22UD5L-L-ZuKF_i.js.br                                                      1.43kb / brotliCompress: 0.66kb
+dist//tmp/bentopdf/assets/chunk-N66VUXT2-DHZEHgZ8.js.br                                                      1.64kb / brotliCompress: 0.63kb
+dist//tmp/bentopdf/assets/chunk-ND2GUHAM-CduYQywJ.js.br                                                      1.83kb / brotliCompress: 0.72kb
+dist//tmp/bentopdf/assets/chunk-727SXJPM-DdCixkWX.js.br                                                      47.38kb / brotliCompress: 12.49kb
+dist//tmp/bentopdf/assets/c4Diagram-AAUBKEIU-BhbY7TN0.js.br                                                  67.46kb / brotliCompress: 15.06kb
+dist//tmp/bentopdf/assets/chunk-AQP2D5EJ-UHscZZVF.js.br                                                      35.76kb / brotliCompress: 10.11kb
+dist//tmp/bentopdf/assets/combine-single-page-Dc2Uat90.js.br                                                 5.12kb / brotliCompress: 1.84kb
+dist//tmp/bentopdf/assets/compress-pdf-DB6Rx05L.js.br                                                        8.97kb / brotliCompress: 3.01kb
+dist//tmp/bentopdf/assets/compare.worker-DAlL8dh7.js.br                                                      15.51kb / brotliCompress: 5.08kb
+dist//tmp/bentopdf/assets/crop-pdf-DyCSdD8l.css.br                                                           3.60kb / brotliCompress: 1.01kb
+dist//tmp/bentopdf/assets/csv-to-pdf-BLV6bIe2.js.br                                                          4.88kb / brotliCompress: 1.72kb
+dist//tmp/bentopdf/assets/csv-to-pdf-BgHPRjJq.js.br                                                          19.62kb / brotliCompress: 6.57kb
+dist//tmp/bentopdf/assets/dagre-BM42HDAG-CPtkEEv7.js.br                                                      10.69kb / brotliCompress: 3.54kb
+dist//tmp/bentopdf/assets/delete-pages-DJ6WYpYZ.js.br                                                        5.64kb / brotliCompress: 1.84kb
+dist//tmp/bentopdf/assets/dagre-B6fwiVEq.js.br                                                               36.00kb / brotliCompress: 11.67kb
+dist//tmp/bentopdf/assets/deskew-pdf-CSsMs8TG.js.br                                                          4.80kb / brotliCompress: 1.60kb
+dist//tmp/bentopdf/assets/diagram-2AECGRRQ-CwU2iN_h.js.br                                                    5.54kb / brotliCompress: 2.07kb
+dist//tmp/bentopdf/assets/defaultLocale-BmaASgvO.js.br                                                       4.54kb / brotliCompress: 1.91kb
+dist//tmp/bentopdf/assets/diagram-KO2AKTUF-mfqAulK5.js.br                                                    10.32kb / brotliCompress: 3.63kb
+dist//tmp/bentopdf/assets/diagram-LMA3HP47-3n-tJ2O1.js.br                                                    4.05kb / brotliCompress: 1.57kb
+dist//tmp/bentopdf/assets/crop-pdf-gl3hARpG.js.br                                                            43.51kb / brotliCompress: 12.61kb
+dist//tmp/bentopdf/assets/diagram-5GNKFQAL-C7n_ZzL1.js.br                                                    2.63kb / brotliCompress: 1.17kb
+dist//tmp/bentopdf/assets/decrypt-pdf-Ct3uoYaR.js.br                                                         4.67kb / brotliCompress: 1.58kb
+dist//tmp/bentopdf/assets/digital-sign-pdf-BEseGADd.js.br                                                    10.61kb / brotliCompress: 2.81kb
+dist//tmp/bentopdf/assets/diagram-OG6HWLK6-DiRTHE9f.js.br                                                    15.02kb / brotliCompress: 4.74kb
+dist//tmp/bentopdf/assets/divide-pages-BlJIesL1.js.br                                                        4.23kb / brotliCompress: 1.51kb
+dist//tmp/bentopdf/assets/edit-attachments-S6nxwrxu.js.br                                                    7.17kb / brotliCompress: 1.96kb
+dist//tmp/bentopdf/assets/email-to-pdf-BVOSaIyP.js.br                                                        4.64kb / brotliCompress: 1.69kb
+dist//tmp/bentopdf/assets/dist-DIwQPBgp.js.br                                                                1.81kb / brotliCompress: 0.72kb
+dist//tmp/bentopdf/assets/edit-pdf-BWgENRhQ.js.br                                                            5.00kb / brotliCompress: 1.80kb
+dist//tmp/bentopdf/assets/edit-metadata-4yOD3Lpa.js.br                                                       7.11kb / brotliCompress: 2.02kb
+dist//tmp/bentopdf/assets/dist-CVg9w1Rz.js.br                                                                26.26kb / brotliCompress: 7.21kb
+dist//tmp/bentopdf/assets/epub-to-pdf-UMTTeNqO.js.br                                                         3.89kb / brotliCompress: 1.45kb
+dist//tmp/bentopdf/assets/encrypt-pdf-BBqO7jC6.js.br                                                         4.33kb / brotliCompress: 1.48kb
+dist//tmp/bentopdf/assets/extract-attachments-DEdOfkkB.js.br                                                 5.21kb / brotliCompress: 1.68kb
+dist//tmp/bentopdf/assets/excel-to-pdf-BMMkeND0.js.br                                                        3.87kb / brotliCompress: 1.42kb
+dist//tmp/bentopdf/assets/extract-pages-CKUn1yTF.js.br                                                       3.64kb / brotliCompress: 1.34kb
+dist//tmp/bentopdf/assets/extract-images-BN6WXMcW.js.br                                                      5.14kb / brotliCompress: 1.86kb
+dist//tmp/bentopdf/assets/extract-tables-929HrpHP.js.br                                                      3.76kb / brotliCompress: 1.51kb
+dist//tmp/bentopdf/assets/erDiagram-TEJ5UH35-Cuyyh2gB.js.br                                                  25.87kb / brotliCompress: 7.64kb
+dist//tmp/bentopdf/assets/fb2-to-pdf-BryKnWDz.js.br                                                          3.84kb / brotliCompress: 1.46kb
+dist//tmp/bentopdf/assets/flatten-annotations-CQ1MzW78.js.br                                                 1.87kb / brotliCompress: 0.80kb
+dist//tmp/bentopdf/assets/flatten-pdf-Btd-72n7.js.br                                                         4.52kb / brotliCompress: 1.45kb
+dist//tmp/bentopdf/assets/fix-page-size-CxsVQXZg.js.br                                                       3.78kb / brotliCompress: 1.26kb
+dist//tmp/bentopdf/assets/font-to-outline-B32Zj8CQ.js.br                                                     4.09kb / brotliCompress: 1.36kb
+dist//tmp/bentopdf/assets/flowDiagram-I6XJVG4X-BBFuSM5w.js.br                                                58.49kb / brotliCompress: 15.25kb
+dist//tmp/bentopdf/assets/ghostscript-dynamic-loader-D391jo1d.js.br                                          1.12kb / brotliCompress: 0.51kb
+dist//tmp/bentopdf/assets/form-filler-BN3pUbhQ.js.br                                                         5.47kb / brotliCompress: 1.66kb
+dist//tmp/bentopdf/assets/ghostscript-loader-Dby_ILjD.js.br                                                  7.25kb / brotliCompress: 2.18kb
+dist//tmp/bentopdf/assets/header-footer-BhcpnTbJ.js.br                                                       4.64kb / brotliCompress: 1.54kb
+dist//tmp/bentopdf/assets/graphlib-CzL7KeBY.js.br                                                            23.35kb / brotliCompress: 7.40kb
+dist//tmp/bentopdf/assets/gitGraphDiagram-PVQCEYII-CZUKMJ-7.js.br                                            28.24kb / brotliCompress: 7.44kb
+dist//tmp/bentopdf/assets/heic-to-pdf-PAAwnXA1.js.br                                                         3.16kb / brotliCompress: 1.23kb
+dist//tmp/bentopdf/assets/image-compress-BPq_Prkj.js.br                                                      1.87kb / brotliCompress: 0.61kb
+dist//tmp/bentopdf/assets/image-effects-CgNkB_1m.js.br                                                       3.85kb / brotliCompress: 1.33kb
+dist//tmp/bentopdf/assets/image-input-utils-BC2MAaAb.js.br                                                   1.55kb / brotliCompress: 0.67kb
+dist//tmp/bentopdf/assets/image-to-pdf-t8QniFQN.js.br                                                        3.24kb / brotliCompress: 1.21kb
+dist//tmp/bentopdf/assets/invert-colors-CRMVxWy_.js.br                                                       3.75kb / brotliCompress: 1.46kb
+dist//tmp/bentopdf/assets/ishikawaDiagram-YF4QCWOH-B6s-VUyp.js.br                                            16.80kb / brotliCompress: 5.75kb
+dist//tmp/bentopdf/assets/journeyDiagram-JHISSGLW-CmuJkl2u.js.br                                             22.61kb / brotliCompress: 7.19kb
+dist//tmp/bentopdf/assets/jpg-to-pdf-CqTPO2qR.js.br                                                          3.23kb / brotliCompress: 1.23kb
+dist//tmp/bentopdf/assets/json-to-pdf-BOowvDbh.js.br                                                         3.32kb / brotliCompress: 1.22kb
+dist//tmp/bentopdf/assets/kanban-definition-UN3LZRKU-DCUGXq1e.js.br                                          19.47kb / brotliCompress: 6.05kb
+dist//tmp/bentopdf/assets/libreoffice-loader-CAFhd4Gg.js.br                                                  15.08kb / brotliCompress: 3.55kb
+dist//tmp/bentopdf/assets/linear-BCAyCDwN.js.br                                                              5.42kb / brotliCompress: 2.02kb
+dist//tmp/bentopdf/assets/linearize-pdf-Fe-S_Pls.js.br                                                       4.34kb / brotliCompress: 1.51kb
+dist//tmp/bentopdf/assets/main-CCnG2E6g.js.br                                                                1.83kb / brotliCompress: 0.75kb
+dist//tmp/bentopdf/assets/markdown-to-pdf-679_3_Z8.css.br                                                    12.26kb / brotliCompress: 2.35kb
+dist//tmp/bentopdf/assets/merge-pdf-k5m-Jr2K.js.br                                                           11.14kb / brotliCompress: 3.24kb
+dist//tmp/bentopdf/assets/mermaid-parser.core-BuvB8HOU.js.br                                                 4.70kb / brotliCompress: 1.27kb
+dist//tmp/bentopdf/assets/mindmap-definition-RKZ34NQL-C0oqxy3u.js.br                                         22.79kb / brotliCompress: 6.86kb
+dist//tmp/bentopdf/assets/mobi-to-pdf-D_aNfc0J.js.br                                                         3.84kb / brotliCompress: 1.44kb
+dist//tmp/bentopdf/assets/n-up-pdf-C_nDet4A.js.br                                                            4.46kb / brotliCompress: 1.65kb
+dist//tmp/bentopdf/assets/ocr-pdf-DPQUSW4v.js.br                                                             7.93kb / brotliCompress: 2.33kb
+dist//tmp/bentopdf/assets/odg-to-pdf-sZtuzN6a.js.br                                                          3.79kb / brotliCompress: 1.42kb
+dist//tmp/bentopdf/assets/odp-to-pdf-BbwmmKBG.js.br                                                          3.79kb / brotliCompress: 1.42kb
+dist//tmp/bentopdf/assets/ods-to-pdf-Dxw88vq4.js.br                                                          3.79kb / brotliCompress: 1.42kb
+dist//tmp/bentopdf/assets/ordinal-BaZOBHJi.js.br                                                             1.15kb / brotliCompress: 0.48kb
+dist//tmp/bentopdf/assets/odt-to-pdf-DoMm_pyH.js.br                                                          3.82kb / brotliCompress: 1.42kb
+dist//tmp/bentopdf/assets/overlay-pdf-BTtp8W3t.js.br                                                         4.25kb / brotliCompress: 1.41kb
+dist//tmp/bentopdf/assets/page-numbers-B-uoP-dL.js.br                                                        3.25kb / brotliCompress: 1.18kb
+dist//tmp/bentopdf/assets/page-dimensions-C53Lts_l.js.br                                                     6.62kb / brotliCompress: 2.11kb
+dist//tmp/bentopdf/assets/pages-to-pdf-DwhtMhRE.js.br                                                        3.85kb / brotliCompress: 1.44kb
+dist//tmp/bentopdf/assets/password-prompt-BOlBdI3v.js.br                                                     14.46kb / brotliCompress: 3.52kb
+dist//tmp/bentopdf/assets/organize-pdf-B9kASDFQ.js.br                                                        7.58kb / brotliCompress: 2.44kb
+dist//tmp/bentopdf/assets/pdf-decrypt-BInDjkZ-.js.br                                                         2.04kb / brotliCompress: 0.77kb
+dist//tmp/bentopdf/assets/path-Drcw3oRx.js.br                                                                2.26kb / brotliCompress: 0.90kb
+dist//tmp/bentopdf/assets/pdf-booklet-BKp0_Uim.js.br                                                         7.91kb / brotliCompress: 2.79kb
+dist//tmp/bentopdf/assets/pdf-multi-tool-CyUgPaNl.js.br                                                      22.97kb / brotliCompress: 5.72kb
+dist//tmp/bentopdf/assets/pdf-layers-D-IpTi4f.js.br                                                          7.15kb / brotliCompress: 2.28kb
+dist//tmp/bentopdf/assets/pdf-to-cbz-BOa_TNYx.js.br                                                          10.37kb / brotliCompress: 3.16kb
+dist//tmp/bentopdf/assets/pdf-to-bmp-Dtb63ubB.js.br                                                          3.52kb / brotliCompress: 1.33kb
+dist//tmp/bentopdf/assets/pdf-operations-CMw8ZvjY.js.br                                                      5.60kb / brotliCompress: 1.89kb
+dist//tmp/bentopdf/assets/pdf-to-csv-BWb5t64c.js.br                                                          2.99kb / brotliCompress: 1.20kb
+dist//tmp/bentopdf/assets/pdf-to-docx-Cb2a6SFn.js.br                                                         4.11kb / brotliCompress: 1.54kb
+dist//tmp/bentopdf/assets/pdf-to-excel-tTSEXrSu.js.br                                                        3.19kb / brotliCompress: 1.27kb
+dist//tmp/bentopdf/assets/pdf-to-greyscale-CwSAoS-Z.js.br                                                    3.54kb / brotliCompress: 1.41kb
+dist//tmp/bentopdf/assets/pdf-to-jpg-Ckdj34Br.js.br                                                          3.91kb / brotliCompress: 1.43kb
+dist//tmp/bentopdf/assets/pdf-to-pdfa-Dggak7XC.js.br                                                         4.60kb / brotliCompress: 1.75kb
+dist//tmp/bentopdf/assets/pdf-to-json-zMsgmPoL.js.br                                                         3.41kb / brotliCompress: 1.25kb
+dist//tmp/bentopdf/assets/pdf-to-png-Ct4GFXC4.js.br                                                          3.89kb / brotliCompress: 1.42kb
+dist//tmp/bentopdf/assets/pdf-to-svg-BieEcPb_.js.br                                                          3.96kb / brotliCompress: 1.45kb
+dist//tmp/bentopdf/assets/pdf-to-markdown-DAfDVo8Z.js.br                                                     4.23kb / brotliCompress: 1.58kb
+dist//tmp/bentopdf/assets/pdf-to-text-NHgJVnm3.js.br                                                         4.01kb / brotliCompress: 1.55kb
+dist//tmp/bentopdf/assets/pdf-to-webp-BDC_Dbrx.js.br                                                         3.93kb / brotliCompress: 1.46kb
+dist//tmp/bentopdf/assets/pdf-to-zip-cPdUcTr2.js.br                                                          3.02kb / brotliCompress: 1.10kb
+dist//tmp/bentopdf/assets/pdf-to-tiff-By9hPczj.js.br                                                         6.60kb / brotliCompress: 2.23kb
+dist//tmp/bentopdf/assets/png-to-pdf-CweSJuMv.js.br                                                          3.79kb / brotliCompress: 1.47kb
+dist//tmp/bentopdf/assets/posterize-pdf-BB0c4j7S.js.br                                                       7.19kb / brotliCompress: 2.29kb
+dist//tmp/bentopdf/assets/powerpoint-to-pdf-B58CEY7k.js.br                                                   3.94kb / brotliCompress: 1.46kb
+dist//tmp/bentopdf/assets/preload-helper-CqFqBgT5.js.br                                                      1.17kb / brotliCompress: 0.55kb
+dist//tmp/bentopdf/assets/pieDiagram-4H26LBE5-hDbGIThR.js.br                                                 4.98kb / brotliCompress: 1.98kb
+dist//tmp/bentopdf/assets/prepare-pdf-for-ai-CuLtKi2i.js.br                                                  4.39kb / brotliCompress: 1.66kb
+dist//tmp/bentopdf/assets/pub-to-pdf-YbIHS23c.js.br                                                          3.86kb / brotliCompress: 1.44kb
+dist//tmp/bentopdf/assets/psd-to-pdf-eRylmHeB.js.br                                                          3.12kb / brotliCompress: 1.15kb
+dist//tmp/bentopdf/assets/pymupdf-loader-ffRqYscu.js.br                                                      1.07kb / brotliCompress: 0.47kb
+dist//tmp/bentopdf/assets/purify.es-DxpHX2wT.js.br                                                           20.62kb / brotliCompress: 7.37kb
+dist//tmp/bentopdf/assets/remove-annotations-BAbztsjN.js.br                                                  3.88kb / brotliCompress: 1.33kb
+dist//tmp/bentopdf/assets/quadrantDiagram-W4KKPZXB-DM-RIK1B.js.br                                            32.72kb / brotliCompress: 8.10kb
+dist//tmp/bentopdf/assets/rasterize-pdf-CSlNWRmC.js.br                                                       4.55kb / brotliCompress: 1.70kb
+dist//tmp/bentopdf/assets/remove-blank-pages-BjGOD_3X.js.br                                                  7.86kb / brotliCompress: 2.42kb
+dist//tmp/bentopdf/assets/remove-metadata-Dz0R6aGG.js.br                                                     3.93kb / brotliCompress: 1.28kb
+dist//tmp/bentopdf/assets/repair-pdf-4_RQyO6h.js.br                                                          1.89kb / brotliCompress: 0.85kb
+dist//tmp/bentopdf/assets/remove-restrictions-BRtjKeVI.js.br                                                 4.15kb / brotliCompress: 1.40kb
+dist//tmp/bentopdf/assets/repair-pdf-DsHh-fb5.js.br                                                          1.61kb / brotliCompress: 0.54kb
+dist//tmp/bentopdf/assets/rotate-custom-HR3rp9AK.js.br                                                       7.11kb / brotliCompress: 2.26kb
+dist//tmp/bentopdf/assets/reverse-pages-1wo6EIYG.js.br                                                       3.59kb / brotliCompress: 1.33kb
+dist//tmp/bentopdf/assets/rotate-pdf-BXunO0Ll.js.br                                                          6.05kb / brotliCompress: 1.82kb
+dist//tmp/bentopdf/assets/rtf-to-pdf-B8JoXlgN.js.br                                                          3.91kb / brotliCompress: 1.46kb
+dist//tmp/bentopdf/assets/sanitize-BeC4nbeV.js.br                                                            6.76kb / brotliCompress: 1.55kb
+dist//tmp/bentopdf/assets/rough.esm-CVegHnt3.js.br                                                           26.47kb / brotliCompress: 7.62kb
+dist//tmp/bentopdf/assets/sanitize-pdf-BChiH1gt.js.br                                                        3.90kb / brotliCompress: 1.24kb
+dist//tmp/bentopdf/assets/scanner-effect-CXIfoMrH.js.br                                                      6.41kb / brotliCompress: 2.05kb
+dist//tmp/bentopdf/assets/sign-pdf-Cmgr5BIW.js.br                                                            5.94kb / brotliCompress: 1.92kb
+dist//tmp/bentopdf/assets/slicedToArray-Dv7FK6kz.js.br                                                       1.03kb / brotliCompress: 0.53kb
+dist//tmp/bentopdf/assets/sankeyDiagram-5OEKKPKP-h2r1JIqk.js.br                                              22.23kb / brotliCompress: 7.32kb
+dist//tmp/bentopdf/assets/split-pdf-BbuxkKY0.js.br                                                           11.73kb / brotliCompress: 3.74kb
+dist//tmp/bentopdf/assets/stateDiagram-AJRCARHV-D-VY3HMO.js.br                                               9.93kb / brotliCompress: 3.16kb
+dist//tmp/bentopdf/assets/requirementDiagram-4Y6WPE33-DA9ODzK4.js.br                                         29.92kb / brotliCompress: 7.88kb
+dist//tmp/bentopdf/assets/table-of-contents-LkwFaKON.js.br                                                   3.43kb / brotliCompress: 1.22kb
+dist//tmp/bentopdf/assets/text-color-DZUJgLOi.js.br                                                          3.89kb / brotliCompress: 1.53kb
+dist//tmp/bentopdf/assets/svg-to-pdf-DNfwLORl.js.br                                                          3.98kb / brotliCompress: 1.53kb
+dist//tmp/bentopdf/assets/tesseract-runtime-CMu-Gq7B.js.br                                                   21.68kb / brotliCompress: 8.01kb
+dist//tmp/bentopdf/assets/timestamp-pdf-DfdTyBJM.js.br                                                       3.43kb / brotliCompress: 1.28kb
+dist//tmp/bentopdf/assets/tiff-to-pdf-C0iUpAuz.js.br                                                         28.07kb / brotliCompress: 8.34kb
+dist//tmp/bentopdf/assets/timeline-definition-PNZ67QCA-Oi9pGqrl.js.br                                        29.58kb / brotliCompress: 8.71kb
+dist//tmp/bentopdf/assets/validate-signature-pdf-scGFJvKI.js.br                                              22.63kb / brotliCompress: 5.81kb
+dist//tmp/bentopdf/assets/txt-to-pdf-ChEtBErW.js.br                                                          4.50kb / brotliCompress: 1.47kb
+dist//tmp/bentopdf/assets/view-metadata-DIOf2xVU.js.br                                                       6.88kb / brotliCompress: 2.17kb
+dist//tmp/bentopdf/assets/tools-B1vM5q28.js.br                                                               9.29kb / brotliCompress: 1.93kb
+dist//tmp/bentopdf/assets/vsd-to-pdf-C3dBa6ZZ.js.br                                                          3.87kb / brotliCompress: 1.45kb
+dist//tmp/bentopdf/assets/wasm-settings-BCxROHOK.js.br                                                       4.25kb / brotliCompress: 1.26kb
+dist//tmp/bentopdf/assets/vennDiagram-CIIHVFJN-Bp0Tz0QA.js.br                                                39.58kb / brotliCompress: 12.91kb
+dist//tmp/bentopdf/assets/wardleyDiagram-YWT4CUSO-B3d3ZSdr.js.br                                             24.50kb / brotliCompress: 5.70kb
+dist//tmp/bentopdf/assets/webp-to-pdf-ccpLLj6D.js.br                                                         3.79kb / brotliCompress: 1.47kb
+dist//tmp/bentopdf/assets/word-to-pdf-BxEfPPEe.js.br                                                         4.87kb / brotliCompress: 1.68kb
+dist//tmp/bentopdf/assets/wps-to-pdf-BXG49zoQ.js.br                                                          3.85kb / brotliCompress: 1.44kb
+dist//tmp/bentopdf/assets/wasm-provider-DTbrVjza.js.br                                                       7.42kb / brotliCompress: 2.61kb
+dist//tmp/bentopdf/assets/wpd-to-pdf-o2ToTnFn.js.br                                                          3.85kb / brotliCompress: 1.44kb
+dist//tmp/bentopdf/assets/xps-to-pdf-BnPPS51L.js.br                                                          3.92kb / brotliCompress: 1.48kb
+dist//tmp/bentopdf/assets/xychartDiagram-2RQKCTM6-BFWeWell.js.br                                             38.94kb / brotliCompress: 9.52kb
+dist//tmp/bentopdf/background-color.html.br                                                                  25.48kb / brotliCompress: 4.67kb
+dist//tmp/bentopdf/cbz-to-pdf.html.br                                                                        25.48kb / brotliCompress: 4.73kb
+dist//tmp/bentopdf/bates-numbering.html.br                                                                   30.41kb / brotliCompress: 5.23kb
+dist//tmp/bentopdf/bmp-to-pdf.html.br                                                                        24.96kb / brotliCompress: 4.61kb
+dist//tmp/bentopdf/change-permissions.html.br                                                                29.54kb / brotliCompress: 4.99kb
+dist//tmp/bentopdf/bookmark.html.br                                                                          44.86kb / brotliCompress: 6.87kb
+dist//tmp/bentopdf/compress-pdf.html.br                                                                      33.51kb / brotliCompress: 5.97kb
+dist//tmp/bentopdf/crop-pdf.html.br                                                                          27.17kb / brotliCompress: 5.00kb
+dist//tmp/bentopdf/compare-pdfs.html.br                                                                      51.10kb / brotliCompress: 7.79kb
+dist//tmp/bentopdf/contact.html.br                                                                           13.81kb / brotliCompress: 2.87kb
+dist//tmp/bentopdf/decrypt-pdf.html.br                                                                       26.32kb / brotliCompress: 4.88kb
+dist//tmp/bentopdf/csv-to-pdf.html.br                                                                        25.10kb / brotliCompress: 4.65kb
+dist//tmp/bentopdf/combine-single-page.html.br                                                               28.38kb / brotliCompress: 5.07kb
+dist//tmp/bentopdf/deskew-pdf.html.br                                                                        27.29kb / brotliCompress: 5.05kb
+dist//tmp/bentopdf/delete-pages.html.br                                                                      25.64kb / brotliCompress: 4.75kb
+dist//tmp/bentopdf/digital-sign-pdf.html.br                                                                  44.73kb / brotliCompress: 6.72kb
+dist//tmp/bentopdf/divide-pages.html.br                                                                      27.07kb / brotliCompress: 5.04kb
+dist//tmp/bentopdf/edit-pdf.html.br                                                                          24.88kb / brotliCompress: 4.63kb
+dist//tmp/bentopdf/edit-metadata.html.br                                                                     29.74kb / brotliCompress: 5.04kb
+dist//tmp/bentopdf/encrypt-pdf.html.br                                                                       26.20kb / brotliCompress: 4.83kb
+dist//tmp/bentopdf/edit-attachments.html.br                                                                  25.12kb / brotliCompress: 4.62kb
+dist//tmp/bentopdf/excel-to-pdf.html.br                                                                      25.56kb / brotliCompress: 4.73kb
+dist//tmp/bentopdf/email-to-pdf.html.br                                                                      28.33kb / brotliCompress: 5.19kb
+dist//tmp/bentopdf/extract-attachments.html.br                                                               25.50kb / brotliCompress: 4.69kb
+dist//tmp/bentopdf/epub-to-pdf.html.br                                                                       25.31kb / brotliCompress: 4.66kb
+dist//tmp/bentopdf/extract-images.html.br                                                                    26.11kb / brotliCompress: 4.80kb
+dist//tmp/bentopdf/extract-tables.html.br                                                                    26.33kb / brotliCompress: 4.75kb
+dist//tmp/bentopdf/faq.html.br                                                                               24.31kb / brotliCompress: 4.27kb
+dist//tmp/bentopdf/extract-pages.html.br                                                                     25.74kb / brotliCompress: 4.81kb
+dist//tmp/bentopdf/fb2-to-pdf.html.br                                                                        25.26kb / brotliCompress: 4.69kb
+dist//tmp/bentopdf/fix-page-size.html.br                                                                     30.40kb / brotliCompress: 5.37kb
+dist//tmp/bentopdf/font-to-outline.html.br                                                                   27.32kb / brotliCompress: 5.05kb
+dist//tmp/bentopdf/form-filler.html.br                                                                       26.12kb / brotliCompress: 4.95kb
+dist//tmp/bentopdf/flatten-pdf.html.br                                                                       26.84kb / brotliCompress: 5.00kb
+dist//tmp/bentopdf/form-creator.html.br                                                                      39.95kb / brotliCompress: 6.32kb
+dist//tmp/bentopdf/heic-to-pdf.html.br                                                                       25.11kb / brotliCompress: 4.64kb
+dist//tmp/bentopdf/header-footer.html.br                                                                     29.49kb / brotliCompress: 5.02kb
+dist//tmp/bentopdf/invert-colors.html.br                                                                     25.23kb / brotliCompress: 4.67kb
+dist//tmp/bentopdf/jpg-to-pdf.html.br                                                                        26.30kb / brotliCompress: 4.89kb
+dist//tmp/bentopdf/json-to-pdf.html.br                                                                       24.14kb / brotliCompress: 4.47kb
+dist//tmp/bentopdf/libreoffice-wasm/soffice.worker.js.br                                                     3.15kb / brotliCompress: 1.16kb
+dist//tmp/bentopdf/index.html.br                                                                             72.07kb / brotliCompress: 12.98kb
+dist//tmp/bentopdf/image-to-pdf.html.br                                                                      26.68kb / brotliCompress: 4.99kb
+dist//tmp/bentopdf/locales/ar/common.json.br                                                                 20.39kb / brotliCompress: 5.28kb
+dist//tmp/bentopdf/linearize-pdf.html.br                                                                     26.14kb / brotliCompress: 4.88kb
+dist//tmp/bentopdf/licensing.html.br                                                                         55.91kb / brotliCompress: 7.35kb
+dist//tmp/bentopdf/locales/be/common.json.br                                                                 25.04kb / brotliCompress: 6.16kb
+dist//tmp/bentopdf/locales/be/tools.json.br                                                                  76.83kb / brotliCompress: 15.88kb
+dist//tmp/bentopdf/locales/da/tools.json.br                                                                  52.68kb / brotliCompress: 13.22kb
+dist//tmp/bentopdf/locales/da/common.json.br                                                                 14.13kb / brotliCompress: 4.44kb
+dist//tmp/bentopdf/locales/ar/tools.json.br                                                                  66.52kb / brotliCompress: 13.56kb
+dist//tmp/bentopdf/locales/en/common.json.br                                                                 15.81kb / brotliCompress: 4.52kb
+dist//tmp/bentopdf/locales/de/common.json.br                                                                 17.95kb / brotliCompress: 5.77kb
+dist//tmp/bentopdf/locales/es/common.json.br                                                                 17.84kb / brotliCompress: 5.36kb
+dist//tmp/bentopdf/locales/de/tools.json.br                                                                  58.12kb / brotliCompress: 14.17kb
+dist//tmp/bentopdf/locales/fr/common.json.br                                                                 16.83kb / brotliCompress: 5.25kb
+dist//tmp/bentopdf/locales/en/tools.json.br                                                                  51.18kb / brotliCompress: 11.93kb
+dist//tmp/bentopdf/locales/es/tools.json.br                                                                  56.39kb / brotliCompress: 13.38kb
+dist//tmp/bentopdf/locales/it/common.json.br                                                                 17.36kb / brotliCompress: 5.37kb
+dist//tmp/bentopdf/locales/fr/tools.json.br                                                                  59.66kb / brotliCompress: 13.97kb
+dist//tmp/bentopdf/locales/id/common.json.br                                                                 16.99kb / brotliCompress: 5.38kb
+dist//tmp/bentopdf/locales/ja/common.json.br                                                                 21.05kb / brotliCompress: 5.87kb
+dist//tmp/bentopdf/locales/id/tools.json.br                                                                  53.88kb / brotliCompress: 12.88kb
+dist//tmp/bentopdf/locales/it/tools.json.br                                                                  55.22kb / brotliCompress: 13.36kb
+dist//tmp/bentopdf/locales/ko/common.json.br                                                                 17.53kb / brotliCompress: 5.33kb
+dist//tmp/bentopdf/locales/nl/common.json.br                                                                 17.17kb / brotliCompress: 5.46kb
+dist//tmp/bentopdf/locales/ko/tools.json.br                                                                  58.48kb / brotliCompress: 13.40kb
+dist//tmp/bentopdf/locales/pt/common.json.br                                                                 16.01kb / brotliCompress: 5.04kb
+dist//tmp/bentopdf/locales/nl/tools.json.br                                                                  56.00kb / brotliCompress: 13.76kb
+dist//tmp/bentopdf/locales/ja/tools.json.br                                                                  65.61kb / brotliCompress: 14.14kb
+dist//tmp/bentopdf/locales/ru/common.json.br                                                                 25.57kb / brotliCompress: 6.13kb
+dist//tmp/bentopdf/locales/pt/tools.json.br                                                                  56.14kb / brotliCompress: 13.52kb
+dist//tmp/bentopdf/locales/sv/common.json.br                                                                 16.89kb / brotliCompress: 5.35kb
+dist//tmp/bentopdf/locales/sk/tools.json.br                                                                  57.38kb / brotliCompress: 14.38kb
+dist//tmp/bentopdf/locales/uk/common.json.br                                                                 22.38kb / brotliCompress: 5.57kb
+dist//tmp/bentopdf/locales/sv/tools.json.br                                                                  53.86kb / brotliCompress: 13.36kb
+dist//tmp/bentopdf/locales/tr/tools.json.br                                                                  56.38kb / brotliCompress: 14.00kb
+dist//tmp/bentopdf/locales/ru/tools.json.br                                                                  79.28kb / brotliCompress: 15.17kb
+dist//tmp/bentopdf/locales/sk/common.json.br                                                                 17.84kb / brotliCompress: 5.89kb
+dist//tmp/bentopdf/locales/vi/common.json.br                                                                 20.27kb / brotliCompress: 5.71kb
+dist//tmp/bentopdf/locales/zh/common.json.br                                                                 15.61kb / brotliCompress: 4.87kb
+dist//tmp/bentopdf/locales/zh/tools.json.br                                                                  50.26kb / brotliCompress: 12.64kb
+dist//tmp/bentopdf/locales/vi/tools.json.br                                                                  60.84kb / brotliCompress: 13.56kb
+dist//tmp/bentopdf/locales/zh-TW/tools.json.br                                                               50.44kb / brotliCompress: 13.27kb
+dist//tmp/bentopdf/locales/tr/common.json.br                                                                 17.67kb / brotliCompress: 5.57kb
+dist//tmp/bentopdf/locales/uk/tools.json.br                                                                  77.67kb / brotliCompress: 15.05kb
+dist//tmp/bentopdf/locales/zh-TW/common.json.br                                                              15.89kb / brotliCompress: 5.23kb
+dist//tmp/bentopdf/markdown-to-pdf.html.br                                                                   22.31kb / brotliCompress: 4.05kb
+dist//tmp/bentopdf/mobi-to-pdf.html.br                                                                       25.26kb / brotliCompress: 4.68kb
+dist//tmp/bentopdf/n-up-pdf.html.br                                                                          28.77kb / brotliCompress: 5.19kb
+dist//tmp/bentopdf/merge-pdf.html.br                                                                         29.93kb / brotliCompress: 5.57kb
+dist//tmp/bentopdf/odg-to-pdf.html.br                                                                        25.55kb / brotliCompress: 4.72kb
+dist//tmp/bentopdf/odp-to-pdf.html.br                                                                        25.58kb / brotliCompress: 4.73kb
+dist//tmp/bentopdf/ods-to-pdf.html.br                                                                        25.57kb / brotliCompress: 4.73kb
+dist//tmp/bentopdf/ocr-pdf.html.br                                                                           37.43kb / brotliCompress: 6.53kb
+dist//tmp/bentopdf/organize-pdf.html.br                                                                      26.41kb / brotliCompress: 4.90kb
+dist//tmp/bentopdf/odt-to-pdf.html.br                                                                        25.22kb / brotliCompress: 4.68kb
+dist//tmp/bentopdf/overlay-pdf.html.br                                                                       27.38kb / brotliCompress: 4.80kb
+dist//tmp/bentopdf/pages-to-pdf.html.br                                                                      25.69kb / brotliCompress: 4.74kb
+dist//tmp/bentopdf/page-dimensions.html.br                                                                   26.49kb / brotliCompress: 4.86kb
+dist//tmp/bentopdf/page-numbers.html.br                                                                      27.43kb / brotliCompress: 4.92kb
+dist//tmp/bentopdf/pdf-editor.html.br                                                                        26.16kb / brotliCompress: 4.52kb
+dist//tmp/bentopdf/pdf-booklet.html.br                                                                       34.98kb / brotliCompress: 5.71kb
+dist//tmp/bentopdf/pdf-layers.html.br                                                                        28.92kb / brotliCompress: 5.35kb
+dist//tmp/bentopdf/pdf-converter.html.br                                                                     32.53kb / brotliCompress: 4.91kb
+dist//tmp/bentopdf/pdf-merge-split.html.br                                                                   23.37kb / brotliCompress: 4.24kb
+dist//tmp/bentopdf/pdf-security.html.br                                                                      22.72kb / brotliCompress: 4.15kb
+dist//tmp/bentopdf/pdf-multi-tool.html.br                                                                    20.40kb / brotliCompress: 3.39kb
+dist//tmp/bentopdf/pdf-to-bmp.html.br                                                                        24.80kb / brotliCompress: 4.61kb
+dist//tmp/bentopdf/pdf-to-excel.html.br                                                                      24.80kb / brotliCompress: 4.59kb
+dist//tmp/bentopdf/pdf-to-csv.html.br                                                                        24.58kb / brotliCompress: 4.57kb
+dist//tmp/bentopdf/pdf-to-cbz.html.br                                                                        33.29kb / brotliCompress: 5.43kb
+dist//tmp/bentopdf/pdf-to-docx.html.br                                                                       25.57kb / brotliCompress: 4.75kb
+dist//tmp/bentopdf/pdf-to-greyscale.html.br                                                                  25.04kb / brotliCompress: 4.61kb
+dist//tmp/bentopdf/pdf-to-pdfa.html.br                                                                       27.63kb / brotliCompress: 5.13kb
+dist//tmp/bentopdf/pdf-to-jpg.html.br                                                                        26.41kb / brotliCompress: 4.89kb
+dist//tmp/bentopdf/pdf-to-png.html.br                                                                        25.74kb / brotliCompress: 4.78kb
+dist//tmp/bentopdf/pdf-to-json.html.br                                                                       24.00kb / brotliCompress: 4.44kb
+dist//tmp/bentopdf/pdf-to-svg.html.br                                                                        25.51kb / brotliCompress: 4.74kb
+dist//tmp/bentopdf/pdf-to-text.html.br                                                                       26.61kb / brotliCompress: 4.94kb
+dist//tmp/bentopdf/pdf-to-markdown.html.br                                                                   25.98kb / brotliCompress: 4.80kb
+dist//tmp/bentopdf/pdf-to-webp.html.br                                                                       25.77kb / brotliCompress: 4.78kb
+dist//tmp/bentopdf/pdf-to-zip.html.br                                                                        25.22kb / brotliCompress: 4.70kb
+dist//tmp/bentopdf/pdfjs-annotation-viewer/web/locale/locale.json.br                                         2.44kb / brotliCompress: 0.47kb
+dist//tmp/bentopdf/pdf-to-tiff.html.br                                                                       28.21kb / brotliCompress: 5.17kb
+dist//tmp/bentopdf/pdf-workflow.html.br                                                                      23.87kb / brotliCompress: 4.45kb
+dist//tmp/bentopdf/pdfjs-viewer/locale/locale.json.br                                                        2.46kb / brotliCompress: 0.48kb
+dist//tmp/bentopdf/pdfjs-viewer/form-viewer.html.br                                                          10.60kb / brotliCompress: 2.34kb
+dist//tmp/bentopdf/pdfjs-annotation-viewer/web/viewer.html.br                                                44.87kb / brotliCompress: 5.11kb
+dist//tmp/bentopdf/pdfjs-annotation-viewer/web/viewer.css.br                                                 117.89kb / brotliCompress: 14.28kb
+dist//tmp/bentopdf/pdfjs-viewer/sign-viewer.html.br                                                          11.55kb / brotliCompress: 2.67kb
+dist//tmp/bentopdf/pdfjs-viewer/viewer.html.br                                                               51.94kb / brotliCompress: 5.58kb
+dist//tmp/bentopdf/png-to-pdf.html.br                                                                        26.09kb / brotliCompress: 4.83kb
+dist//tmp/bentopdf/posterize-pdf.html.br                                                                     32.83kb / brotliCompress: 5.56kb
+dist//tmp/bentopdf/powerpoint-to-pdf.html.br                                                                 25.82kb / brotliCompress: 4.73kb
+dist//tmp/bentopdf/prepare-pdf-for-ai.html.br                                                                26.60kb / brotliCompress: 4.95kb
+dist//tmp/bentopdf/rasterize-pdf.html.br                                                                     27.25kb / brotliCompress: 5.00kb
+dist//tmp/bentopdf/psd-to-pdf.html.br                                                                        25.21kb / brotliCompress: 4.65kb
+dist//tmp/bentopdf/privacy.html.br                                                                           18.23kb / brotliCompress: 4.13kb
+dist//tmp/bentopdf/remove-annotations.html.br                                                                25.39kb / brotliCompress: 4.65kb
+dist//tmp/bentopdf/remove-restrictions.html.br                                                               25.90kb / brotliCompress: 4.77kb
+dist//tmp/bentopdf/pub-to-pdf.html.br                                                                        25.64kb / brotliCompress: 4.74kb
+dist//tmp/bentopdf/remove-metadata.html.br                                                                   25.73kb / brotliCompress: 4.78kb
+dist//tmp/bentopdf/repair-pdf.html.br                                                                        25.76kb / brotliCompress: 4.74kb
+dist//tmp/bentopdf/reverse-pages.html.br                                                                     25.89kb / brotliCompress: 4.84kb
+dist//tmp/bentopdf/rotate-pdf.html.br                                                                        26.42kb / brotliCompress: 4.88kb
+dist//tmp/bentopdf/rotate-custom.html.br                                                                     26.63kb / brotliCompress: 4.88kb
+dist//tmp/bentopdf/sanitize-pdf.html.br                                                                      29.94kb / brotliCompress: 5.00kb
+dist//tmp/bentopdf/scanner-effect.html.br                                                                    33.09kb / brotliCompress: 5.30kb
+dist//tmp/bentopdf/rtf-to-pdf.html.br                                                                        25.29kb / brotliCompress: 4.69kb
+dist//tmp/bentopdf/svg-to-pdf.html.br                                                                        26.10kb / brotliCompress: 4.84kb
+dist//tmp/bentopdf/terms.html.br                                                                             20.48kb / brotliCompress: 4.55kb
+dist//tmp/bentopdf/split-pdf.html.br                                                                         34.70kb / brotliCompress: 5.87kb
+dist//tmp/bentopdf/sign-pdf.html.br                                                                          25.88kb / brotliCompress: 4.85kb
+dist//tmp/bentopdf/text-color.html.br                                                                        25.27kb / brotliCompress: 4.68kb
+dist//tmp/bentopdf/table-of-contents.html.br                                                                 27.46kb / brotliCompress: 4.84kb
+dist//tmp/bentopdf/tiff-to-pdf.html.br                                                                       25.98kb / brotliCompress: 4.81kb
+dist//tmp/bentopdf/sw.js.br                                                                                  10.85kb / brotliCompress: 2.59kb
+dist//tmp/bentopdf/timestamp-pdf.html.br                                                                     27.07kb / brotliCompress: 5.01kb
+dist//tmp/bentopdf/tools.html.br                                                                             15.34kb / brotliCompress: 3.17kb
+dist//tmp/bentopdf/txt-to-pdf.html.br                                                                        31.76kb / brotliCompress: 5.67kb
+dist//tmp/bentopdf/validate-signature-pdf.html.br                                                            25.04kb / brotliCompress: 4.72kb
+dist//tmp/bentopdf/view-metadata.html.br                                                                     25.22kb / brotliCompress: 4.67kb
+dist//tmp/bentopdf/wasm-settings.html.br                                                                     24.66kb / brotliCompress: 4.30kb
+dist//tmp/bentopdf/webp-to-pdf.html.br                                                                       26.12kb / brotliCompress: 4.83kb
+dist//tmp/bentopdf/workers/edit-attachments.worker.js.br                                                     5.27kb / brotliCompress: 1.10kb
+dist//tmp/bentopdf/vsd-to-pdf.html.br                                                                        25.65kb / brotliCompress: 4.75kb
+dist//tmp/bentopdf/workers/alternate-merge.worker.js.br                                                      2.46kb / brotliCompress: 0.76kb
+dist//tmp/bentopdf/word-to-pdf.html.br                                                                       26.54kb / brotliCompress: 4.93kb
+dist//tmp/bentopdf/workers/merge.worker.js.br                                                                2.78kb / brotliCompress: 0.84kb
+dist//tmp/bentopdf/workers/json-to-pdf.worker.js.br                                                          2.26kb / brotliCompress: 0.71kb
+dist//tmp/bentopdf/workers/extract-attachments.worker.js.br                                                  3.85kb / brotliCompress: 1.03kb
+dist//tmp/bentopdf/workers/pdf-to-json.worker.js.br                                                          1.92kb / brotliCompress: 0.61kb
+dist//tmp/bentopdf/workers/add-attachments.worker.js.br                                                      4.85kb / brotliCompress: 1.30kb
+dist//tmp/bentopdf/workers/table-of-contents.worker.js.br                                                    2.23kb / brotliCompress: 0.67kb
+dist//tmp/bentopdf/xml-to-pdf.html.br                                                                        25.42kb / brotliCompress: 4.69kb
+dist//tmp/bentopdf/wps-to-pdf.html.br                                                                        25.60kb / brotliCompress: 4.75kb
+dist//tmp/bentopdf/xps-to-pdf.html.br                                                                        25.35kb / brotliCompress: 4.69kb
+dist//tmp/bentopdf/wpd-to-pdf.html.br                                                                        25.62kb / brotliCompress: 4.74kb
+dist//tmp/bentopdf/remove-blank-pages.html.br                                                                26.65kb / brotliCompress: 4.90kb
+dist//tmp/bentopdf/assets/blockDiagram-GPEHLZMM-DQJsMZPu.js.br                                               70.78kb / brotliCompress: 17.60kb
+dist//tmp/bentopdf/assets/compare-pdfs-CPEBij2m.js.br                                                        57.82kb / brotliCompress: 16.71kb
+dist//tmp/bentopdf/assets/cose-bilkent-S5V4N54A-aaTK9EZT.js.br                                               79.50kb / brotliCompress: 18.13kb
+dist//tmp/bentopdf/assets/ganttDiagram-6RSMTGT7-C_zg2P-L.js.br                                               67.57kb / brotliCompress: 19.39kb
+dist//tmp/bentopdf/assets/jszip.min-D1ghq3YS.js.br                                                           93.65kb / brotliCompress: 24.49kb
+dist//tmp/bentopdf/assets/stream-browserify-BexaePeA.js.br                                                   102.34kb / brotliCompress: 26.53kb
+dist//tmp/bentopdf/assets/sequenceDiagram-3UESZ5HK-Cai61rBW.js.br                                            112.91kb / brotliCompress: 24.49kb
+dist//tmp/bentopdf/assets/vips-es6-B9LnAsFW.js.br                                                            87.78kb / brotliCompress: 27.58kb
+dist//tmp/bentopdf/assets/vips-es6-CkU9ZRC2.js.br                                                            87.81kb / brotliCompress: 27.64kb
+dist//tmp/bentopdf/assets/xml-to-pdf-BNXwKyOJ.js.br                                                          57.98kb / brotliCompress: 17.50kb
+dist//tmp/bentopdf/libreoffice-wasm/browser.worker.global.js.br                                              106.60kb / brotliCompress: 20.79kb
+dist//tmp/bentopdf/pdfjs-annotation-viewer/pdfjs-annotation-extension-testdata.json.br                       57.56kb / brotliCompress: 18.68kb
+dist//tmp/bentopdf/pdfjs-viewer/pdf_viewer.css.br                                                            195.01kb / brotliCompress: 18.70kb
+dist//tmp/bentopdf/pdfjs-viewer/viewer.css.br                                                                262.80kb / brotliCompress: 25.08kb
+dist//tmp/bentopdf/assets/architectureDiagram-3BPJPVTR-CSQOPh-i.js.br                                        143.35kb / brotliCompress: 33.18kb
+dist//tmp/bentopdf/assets/html2canvas-DiKkvTIX.js.br                                                         194.89kb / brotliCompress: 36.67kb
+dist//tmp/bentopdf/assets/index.es-Dhibcv_T.js.br                                                            147.13kb / brotliCompress: 41.59kb
+dist//tmp/bentopdf/assets/markdown-it-CTw5J66J.js.br                                                         98.88kb / brotliCompress: 35.66kb
+dist//tmp/bentopdf/assets/form-creator-SsKkXe4u.css.br                                                       267.77kb / brotliCompress: 32.78kb
+dist//tmp/bentopdf/assets/style-DGDqwKgd.css.br                                                              193.97kb / brotliCompress: 40.94kb
+dist//tmp/bentopdf/assets/direct-engine-DG0BQM6z-lAdjQxnq.js.br                                              266.74kb / brotliCompress: 50.07kb
+dist//tmp/bentopdf/assets/katex-DOOlLvUD.js.br                                                               250.32kb / brotliCompress: 61.00kb
+dist//tmp/bentopdf/assets/lib-Bd4eG6u4.js.br                                                                 274.90kb / brotliCompress: 59.52kb
+dist//tmp/bentopdf/pdfjs-viewer/pdf_viewer.mjs.br                                                            287.07kb / brotliCompress: 53.26kb
+dist//tmp/bentopdf/assets/pdf-workflow-AlgIukkQ.js.br                                                        393.46kb / brotliCompress: 65.19kb
+dist//tmp/bentopdf/assets/style-DmEuuwuW.js.br                                                               360.02kb / brotliCompress: 66.57kb
+dist//tmp/bentopdf/libreoffice-wasm/soffice.js.br                                                            433.67kb / brotliCompress: 69.96kb
+dist//tmp/bentopdf/pdfjs-annotation-viewer/web/viewer.mjs.br                                                 437.04kb / brotliCompress: 74.47kb
+dist//tmp/bentopdf/pdfjs-viewer/wasm/openjpeg_nowasm_fallback.js.br                                          441.19kb / brotliCompress: 90.97kb
+dist//tmp/bentopdf/assets/jspdf.plugin.autotable-BM9q6WEI.js.br                                              411.86kb / brotliCompress: 110.00kb
+dist//tmp/bentopdf/assets/worker-engine--SVIHUN1-B598AzX4.js.br                                              619.59kb / brotliCompress: 85.63kb
+dist//tmp/bentopdf/pdfjs-annotation-viewer/build/pdf.mjs.br                                                  588.19kb / brotliCompress: 95.99kb
+dist//tmp/bentopdf/pdfjs-viewer/viewer.mjs.br                                                                565.81kb / brotliCompress: 94.89kb
+dist//tmp/bentopdf/assets/cytoscape.esm-DZZWY1bk.js.br                                                       423.92kb / brotliCompress: 112.44kb
+dist//tmp/bentopdf/assets/chunk-NNHCCRGN-BOILScE-.js.br                                                      579.77kb / brotliCompress: 107.84kb
+dist//tmp/bentopdf/assets/email-to-pdf-DhQvH2-B.js.br                                                        387.23kb / brotliCompress: 129.08kb
+dist//tmp/bentopdf/assets/xlsx-BPQXm02g.js.br                                                                481.66kb / brotliCompress: 128.48kb
+dist//tmp/bentopdf/pdfjs-viewer/pdf.mjs.br                                                                   767.15kb / brotliCompress: 122.71kb
+dist//tmp/bentopdf/assets/es-BBPpdjB2.js.br                                                                  425.43kb / brotliCompress: 161.24kb
+dist//tmp/bentopdf/assets/markdown-to-pdf-TWjE2h3c.js.br                                                     695.29kb / brotliCompress: 144.59kb
+dist//tmp/bentopdf/assets/main-C6XNF7_o.js.br                                                                587.04kb / brotliCompress: 149.67kb
+dist//tmp/bentopdf/assets/embedpdf-CBErZnKe-Z3mPPNjw.js.br                                                   871.87kb / brotliCompress: 170.17kb
+dist//tmp/bentopdf/assets/form-creator-BK6U35PX.js.br                                                        890.24kb / brotliCompress: 175.74kb
+dist//tmp/bentopdf/assets/ocr-oze9bpZG.js.br                                                                 709.37kb / brotliCompress: 253.97kb
+dist//tmp/bentopdf/pdfjs-viewer/pdf.sandbox.mjs.br                                                           711.46kb / brotliCompress: 245.55kb
+dist//tmp/bentopdf/pdfjs-annotation-viewer/build/pdf.sandbox.mjs.br                                          708.43kb / brotliCompress: 244.89kb
+dist//tmp/bentopdf/assets/digital-sign-pdf-CvREGXxA.js.br                                                    826.35kb / brotliCompress: 286.47kb
+dist//tmp/bentopdf/assets/heic2any-C_S9rIcr.js.br                                                            1320.45kb / brotliCompress: 256.33kb
+dist//tmp/bentopdf/assets/pdf.worker.min-B_fnEKel.js.br                                                      1210.01kb / brotliCompress: 293.23kb
+dist//tmp/bentopdf/pdfjs-viewer/pdf.worker.mjs.br                                                            1861.62kb / brotliCompress: 284.24kb
+dist//tmp/bentopdf/coherentpdf.browser.min.js.br                                                             1294.01kb / brotliCompress: 413.63kb
+dist//tmp/bentopdf/assets/pdf.worker-CliDBb4N.js.br                                                          2123.52kb / brotliCompress: 357.41kb
+dist//tmp/bentopdf/pdfjs-annotation-viewer/build/pdf.worker.mjs.br                                           2112.67kb / brotliCompress: 363.94kb
+dist//tmp/bentopdf/pdfjs-annotation-viewer/web/pdfjs-annotation-extension/pdfjs-annotation-extension.js.br   3889.54kb / brotliCompress: 1369.15kb
+
+
+
+✨ [vite-plugin-compression]:algorithm=gzip - compressed file successfully: 
+
+
+🌍 Generating i18n pages...
+   SITE_URL: https://www.bentopdf.com
+   BASE_PATH: /
+   Languages: 21 (ar, be, da, de, en, es, fr, id, it, ja, ko, nl, pt, ru, sk, sv, tr, uk, vi, zh, zh-TW)
+   Loading translations...
+   Processing 130 HTML files...
+   Progress: 10/2600 pages
+   Progress: 20/2600 pages
+   Progress: 30/2600 pages
+   Progress: 40/2600 pages
+   Progress: 50/2600 pages
+   Progress: 60/2600 pages
+   Progress: 70/2600 pages
+   Progress: 80/2600 pages
+   Progress: 90/2600 pages
+   Progress: 100/2600 pages
+   Progress: 110/2600 pages
+   Progress: 120/2600 pages
+   Progress: 130/2600 pages
+   Progress: 140/2600 pages
+   Progress: 150/2600 pages
+   Progress: 160/2600 pages
+   Progress: 170/2600 pages
+   Progress: 180/2600 pages
+   Progress: 190/2600 pages
+   Progress: 200/2600 pages
+   Progress: 210/2600 pages
+   Progress: 220/2600 pages
+   Progress: 230/2600 pages
+   Progress: 240/2600 pages
+   Progress: 250/2600 pages
+   Progress: 260/2600 pages
+   Progress: 270/2600 pages
+   Progress: 280/2600 pages
+   Progress: 290/2600 pages
+   Progress: 300/2600 pages
+   Progress: 310/2600 pages
+   Progress: 320/2600 pages
+   Progress: 330/2600 pages
+   Progress: 340/2600 pages
+   Progress: 350/2600 pages
+   Progress: 360/2600 pages
+   Progress: 370/2600 pages
+   Progress: 380/2600 pages
+   Progress: 390/2600 pages
+   Progress: 400/2600 pages
+   Progress: 410/2600 pages
+   Progress: 420/2600 pages
+   Progress: 430/2600 pages
+   Progress: 440/2600 pages
+   Progress: 450/2600 pages
+   Progress: 460/2600 pages
+   Progress: 470/2600 pages
+   Progress: 480/2600 pages
+   Progress: 490/2600 pages
+   Progress: 500/2600 pages
+   Progress: 510/2600 pages
+   Progress: 520/2600 pages
+   Progress: 530/2600 pages
+   Progress: 540/2600 pages
+   Progress: 550/2600 pages
+   Progress: 560/2600 pages
+   Progress: 570/2600 pages
+   Progress: 580/2600 pages
+   Progress: 590/2600 pages
+   Progress: 600/2600 pages
+   Progress: 610/2600 pages
+   Progress: 620/2600 pages
+   Progress: 630/2600 pages
+   Progress: 640/2600 pages
+   Progress: 650/2600 pages
+   Progress: 660/2600 pages
+   Progress: 670/2600 pages
+   Progress: 680/2600 pages
+   Progress: 690/2600 pages
+   Progress: 700/2600 pages
+   Progress: 710/2600 pages
+   Progress: 720/2600 pages
+   Progress: 730/2600 pages
+   Progress: 740/2600 pages
+   Progress: 750/2600 pages
+   Progress: 760/2600 pages
+   Progress: 770/2600 pages
+   Progress: 780/2600 pages
+   Progress: 790/2600 pages
+   Progress: 800/2600 pages
+   Progress: 810/2600 pages
+   Progress: 820/2600 pages
+   Progress: 830/2600 pages
+   Progress: 840/2600 pages
+   Progress: 850/2600 pages
+   Progress: 860/2600 pages
+   Progress: 870/2600 pages
+   Progress: 880/2600 pages
+   Progress: 890/2600 pages
+   Progress: 900/2600 pages
+   Progress: 910/2600 pages
+   Progress: 920/2600 pages
+   Progress: 930/2600 pages
+   Progress: 940/2600 pages
+   Progress: 950/2600 pages
+   Progress: 960/2600 pages
+   Progress: 970/2600 pages
+   Progress: 980/2600 pages
+   Progress: 990/2600 pages
+   Progress: 1000/2600 pages
+   Progress: 1010/2600 pages
+   Progress: 1020/2600 pages
+   Progress: 1030/2600 pages
+   Progress: 1040/2600 pages
+   Progress: 1050/2600 pages
+   Progress: 1060/2600 pages
+   Progress: 1070/2600 pages
+   Progress: 1080/2600 pages
+   Progress: 1090/2600 pages
+   Progress: 1100/2600 pages
+   Progress: 1110/2600 pages
+   Progress: 1120/2600 pages
+   Progress: 1130/2600 pages
+   Progress: 1140/2600 pages
+   Progress: 1150/2600 pages
+   Progress: 1160/2600 pages
+   Progress: 1170/2600 pages
+   Progress: 1180/2600 pages
+   Progress: 1190/2600 pages
+   Progress: 1200/2600 pages
+   Progress: 1210/2600 pages
+   Progress: 1220/2600 pages
+   Progress: 1230/2600 pages
+   Progress: 1240/2600 pages
+   Progress: 1250/2600 pages
+   Progress: 1260/2600 pages
+   Progress: 1270/2600 pages
+   Progress: 1280/2600 pages
+   Progress: 1290/2600 pages
+   Progress: 1300/2600 pages
+   Progress: 1310/2600 pages
+   Progress: 1320/2600 pages
+   Progress: 1330/2600 pages
+   Progress: 1340/2600 pages
+   Progress: 1350/2600 pages
+   Progress: 1360/2600 pages
+   Progress: 1370/2600 pages
+   Progress: 1380/2600 pages
+   Progress: 1390/2600 pages
+   Progress: 1400/2600 pages
+   Progress: 1410/2600 pages
+   Progress: 1420/2600 pages
+   Progress: 1430/2600 pages
+   Progress: 1440/2600 pages
+   Progress: 1450/2600 pages
+   Progress: 1460/2600 pages
+   Progress: 1470/2600 pages
+   Progress: 1480/2600 pages
+   Progress: 1490/2600 pages
+   Progress: 1500/2600 pages
+   Progress: 1510/2600 pages
+   Progress: 1520/2600 pages
+   Progress: 1530/2600 pages
+   Progress: 1540/2600 pages
+   Progress: 1550/2600 pages
+   Progress: 1560/2600 pages
+   Progress: 1570/2600 pages
+   Progress: 1580/2600 pages
+   Progress: 1590/2600 pages
+   Progress: 1600/2600 pages
+   Progress: 1610/2600 pages
+   Progress: 1620/2600 pages
+   Progress: 1630/2600 pages
+   Progress: 1640/2600 pages
+   Progress: 1650/2600 pages
+   Progress: 1660/2600 pages
+   Progress: 1670/2600 pages
+   Progress: 1680/2600 pages
+   Progress: 1690/2600 pages
+   Progress: 1700/2600 pages
+   Progress: 1710/2600 pages
+   Progress: 1720/2600 pages
+   Progress: 1730/2600 pages
+   Progress: 1740/2600 pages
+   Progress: 1750/2600 pages
+   Progress: 1760/2600 pages
+   Progress: 1770/2600 pages
+   Progress: 1780/2600 pages
+   Progress: 1790/2600 pages
+   Progress: 1800/2600 pages
+   Progress: 1810/2600 pages
+   Progress: 1820/2600 pages
+   Progress: 1830/2600 pages
+   Progress: 1840/2600 pages
+   Progress: 1850/2600 pages
+   Progress: 1860/2600 pages
+   Progress: 1870/2600 pages
+   Progress: 1880/2600 pages
+   Progress: 1890/2600 pages
+   Progress: 1900/2600 pages
+   Progress: 1910/2600 pages
+   Progress: 1920/2600 pages
+   Progress: 1930/2600 pages
+   Progress: 1940/2600 pages
+   Progress: 1950/2600 pages
+   Progress: 1960/2600 pages
+   Progress: 1970/2600 pages
+   Progress: 1980/2600 pages
+   Progress: 1990/2600 pages
+   Progress: 2000/2600 pages
+   Progress: 2010/2600 pages
+   Progress: 2020/2600 pages
+   Progress: 2030/2600 pages
+   Progress: 2040/2600 pages
+   Progress: 2050/2600 pages
+   Progress: 2060/2600 pages
+   Progress: 2070/2600 pages
+   Progress: 2080/2600 pages
+   Progress: 2090/2600 pages
+   Progress: 2100/2600 pages
+   Progress: 2110/2600 pages
+   Progress: 2120/2600 pages
+   Progress: 2130/2600 pages
+   Progress: 2140/2600 pages
+   Progress: 2150/2600 pages
+   Progress: 2160/2600 pages
+   Progress: 2170/2600 pages
+   Progress: 2180/2600 pages
+   Progress: 2190/2600 pages
+   Progress: 2200/2600 pages
+   Progress: 2210/2600 pages
+   Progress: 2220/2600 pages
+   Progress: 2230/2600 pages
+   Progress: 2240/2600 pages
+   Progress: 2250/2600 pages
+   Progress: 2260/2600 pages
+   Progress: 2270/2600 pages
+   Progress: 2280/2600 pages
+   Progress: 2290/2600 pages
+   Progress: 2300/2600 pages
+   Progress: 2310/2600 pages
+   Progress: 2320/2600 pages
+   Progress: 2330/2600 pages
+   Progress: 2340/2600 pages
+   Progress: 2350/2600 pages
+   Progress: 2360/2600 pages
+   Progress: 2370/2600 pages
+   Progress: 2380/2600 pages
+   Progress: 2390/2600 pages
+   Progress: 2400/2600 pages
+   Progress: 2410/2600 pages
+   Progress: 2420/2600 pages
+   Progress: 2430/2600 pages
+   Progress: 2440/2600 pages
+   Progress: 2450/2600 pages
+   Progress: 2460/2600 pages
+   Progress: 2470/2600 pages
+   Progress: 2480/2600 pages
+   Progress: 2490/2600 pages
+   Progress: 2500/2600 pages
+   Progress: 2510/2600 pages
+   Progress: 2520/2600 pages
+   Progress: 2530/2600 pages
+   Progress: 2540/2600 pages
+   Progress: 2550/2600 pages
+   Progress: 2560/2600 pages
+   Progress: 2570/2600 pages
+   Progress: 2580/2600 pages
+   Progress: 2590/2600 pages
+   Progress: 2600/2600 pages
+✅ i18n pages generated successfully!
+🗺️  Generating multilingual sitemap...
+   SITE_URL: https://www.bentopdf.com
+   Languages: ar, be, da, de, en, es, fr, id, it, ja, ko, nl, pt, ru, sk, sv, tr, uk, vi, zh, zh-TW
+✅ Sitemap generated with 128 canonical URLs (21 hreflang alternates each)
+[security-headers] wrote /tmp/bentopdf/security-headers.conf with 1 script-src / 3 connect-src origin(s)
+[security-headers] wrote /tmp/bentopdf/security-headers-docs.conf (docs CSP)
+SEO audit: 2730 HTML files passed, sitemap clean.
